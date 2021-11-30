@@ -1,0 +1,6 @@
+
+Software/CubieUno/.vscode/c_cpp_properties.json
+Software/CubieUno/.vscode/arduino.json
+*.gcode
+*.stl
+*.dxf
