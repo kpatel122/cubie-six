@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style> /* Reset.less
+ * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here   that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
+ * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+ html,
+ body {
+   margin: 0;
+   padding: 0;
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ dd,
+ dl,
+ dt,
+ li,
+ ol,
+ ul,
+ fieldset,
+ form,
+ label,
+ legend,
+ button,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 100%;
+   line-height: 1;
+   font-family: inherit;
+ }
+ table {
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+ ol,
+ ul {
+   list-style: none;
+ }
+ q:before,
+ q:after,
+ blockquote:before,
+ blockquote:after {
+   content: "";
+ }
+ html {
+   overflow-y: scroll;
+   font-size: 100%;
+   -webkit-text-size-adjust: 100%;
+       -ms-text-size-adjust: 100%;
+           text-size-adjust: 100%;
+ }
+ a:focus {
+   outline: thin dotted;
+ }
+ a:hover,
+ a:active {
+   outline: 0;
+ }
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ nav,
+ section {
+   display: block;
+ }
+ audio,
+ canvas,
+ video {
+   display: inline-block;
+   *display: inline;
+   *zoom: 1;
+ }
+ audio:not([controls]) {
+   display: none;
+ }
+ sub,
+ sup {
+   font-size: 75%;
+   line-height: 0;
+   position: relative;
+   vertical-align: baseline;
+ }
+ sup {
+   top: -0.5em;
+ }
+ sub {
+   bottom: -0.25em;
+ }
+ img {
+   border: 0;
+   -ms-interpolation-mode: bicubic;
+ }
+ button,
+ input,
+ select,
+ textarea {
+   font-size: 100%;
+   margin: 0;
+   vertical-align: baseline;
+   *vertical-align: middle;
+ }
+ button,
+ input {
+   line-height: normal;
+   *overflow: visible;
+ }
+ button::-moz-focus-inner,
+ input::-moz-focus-inner {
+   border: 0;
+   padding: 0;
+ }
+ button,
+ input[type="button"],
+ input[type="reset"],
+ input[type="submit"] {
+   cursor: pointer;
+   -webkit-appearance: button;
+ }
+ input[type="search"] {
+   -webkit-appearance: textfield;
+   box-sizing: content-box;
+ }
+ input[type="search"]::-webkit-search-decoration {
+   -webkit-appearance: none;
+ }
+ textarea {
+   overflow: auto;
+   vertical-align: top;
+ }
+ *,
+ *:before,
+ *:after {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+ body {
+   padding: 0;
+   margin: 10px auto 0 auto;
+ }
+ .serif {
+   font-family: Georgia, Times, serif;
+ }
+ .iab-ad__wrapper {
+   width: 100%;
+   max-height: 1090px;
+   overflow: hidden;
+   margin-top: 10px;
+ }
+ .text-subheading {
+   font-family: "Helvetica Neue", arial, sans-serif;
+   font-size: 12px;
+   font-weight: 700;
+   color: #999;
+ }
+
+ a {
+   text-decoration: none;
+ }
+ .dark-theme {
+   background-color: transparent;
+ }
+ .dark-theme #ad-container .text-subheading {
+    color: #999;
+ }
+ .dark-theme #ad-container a, .dark-theme #ad-container span{
+    color: #999;
+ }
+ body.serif .text-subheading,
+ body.serif .video-title,
+ body.serif .video-title .branding {
+   font-family: Georgia, Times, serif !important;
+ }
+ .trc_rbox_header {
+   display: none !important;
+ }
+ .ad-dr__title {
+   margin-top: 5px;
+ }
+ .ad-dr__message {
+   padding-right: 5px;
+ }
+ .icon__block {
+   margin-bottom: 5px;
+ }
+ .thumbnails-a .branding {
+   font-weight: normal !important;
+ }
+ .thumbnails-a .videoCube {
+   margin-bottom: 1.5% !important;
+ }
+ .text-links-a .videoCube.thumbnail_none a {
+   list-style: none !important;
+   margin-left: 0px !important;
+ }
+ .trc-content-sponsored {
+   margin: 0 auto;
+ }
+ [id^="container-"] {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  max-width: 700px;
+  margin: auto;
+}
+</style>
+
+<link rel="stylesheet" type="text/css" href="a_data/cta-branding.css"><script type="text/javascript" src="a_data/cds-pips.js" charset="UTF-8" async="async"></script><script charset="UTF-8" type="text/javascript" async="async" src="a_data/userx.js"></script><script charset="UTF-8" type="text/javascript" async="async" src="a_data/sha256.js"></script><script charset="UTF-8" type="text/javascript" async="async" src="a_data/tfa-eid.js"></script><script type="text/javascript" src="a_data/cta-branding.js" charset="UTF-8"></script><script type="text/javascript" src="a_data/sync" charset="UTF-8" async="async"></script><script async="" src="a_data/beacon.js"></script><script charset="UTF-8" type="text/javascript" src="a_data/impl.js"></script><script src="a_data/loader.js" id="tb_loader_script" async="" charset="UTF-8"></script><style type="text/css">.trc_rbox_container{direction:ltr;text-align:left}.trc_rbox_container [class*=span]{float:none;margin-left:0}.trc_multi_widget_container{display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}.trc_multi_widget_container .trc_rbox_div{margin:0}.trc_rbox_header{border:0 solid;overflow:hidden;vertical-align:middle}.trc_rbox_container .trc_img{display:inline-block!important}.trc_rbox_header_icon_div{display:table-cell;vertical-align:baseline}.trc_rbox_header .trc_rbox_header_icon_div .trc_rbox_header_icon_img{vertical-align:middle;width:auto}.trc_rbox_header_icon_span{display:inline-table}.in_trc_header{position:relative!important;float:right;margin:0}#trc_rbox_css_loaded{overflow:hidden;width:0;height:0}.trc_rbox{margin-top:0}.trc_rbox_div{margin:0 0 3px;direction:ltr;padding:0;box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-webkit-box-sizing:border-box;overflow:auto;position:relative;width:auto;border:solid #ccc 1px}.loading-animation span{display:block}.videoCube{zoom:1;cursor:pointer;float:none;overflow:hidden;box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-webkit-box-sizing:border-box}.videoCube_hover,div.videoCube:hover{cursor:pointer}.videoCube span.video-title:hover,.videoCube_hover span.video-title{text-decoration:underline}.videoCube a{text-decoration:none;border:0;color:#000;cursor:pointer}.videoCube a,.videoCube a:hover,.videoCube a:link,.videoCube_hover a{text-decoration:none!important;outline:0}.videoCube a .thumbBlock{float:left;display:block;overflow:hidden!important}.videoCube a img,.videoCube img{border:0;display:block;margin:0;height:auto;width:auto}.videoCube .video-label{display:block;overflow:hidden}.videoCube .video-label{width:auto!important;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.videoCube .video-label-box.label-box-with-title-icon{display:table}.video-icon-container{float:left;display:table-cell;vertical-align:baseline}.video-icon-img{vertical-align:middle}.videoCube .video-duration{height:0;float:left;position:relative;color:#fff;font-size:11px}.videoCube .video-duration dt{border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;background-color:#000;opacity:.6}.videoCube span.video-label.trc_ellipsis{position:relative;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical}.videoCube span.video-label.trc-smart-ellipsis{position:relative;overflow:hidden}.videoCube span.video-label.trc-smart-ellipsis ins{display:inline-block;text-decoration:inherit}.videoCube span.video-label.trc-smart-ellipsis.tbl-ltr-label{direction:ltr}.videoCube span.video-label.trc-smart-ellipsis.tbl-ltr-label ins{float:left;margin-right:5px;direction:ltr}.videoCube span.video-label.trc-smart-ellipsis.tbl-rtl-label{float:right;direction:rtl;width:100%!important}.videoCube span.video-label.trc-smart-ellipsis.tbl-rtl-label ins{float:right;margin-left:5px;direction:rtl}.videoCube span.video-label.trc-smart-ellipsis ins.lastLineEllipsis{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;width:100%}.video-duration.video-duration-detail div{color:#fff}.trc_rbox .sponsored{position:relative;display:block;overflow:visible;height:auto;width:auto;padding-right:0;text-align:right;font-size:9px}.trc_rbox_div{height:410px}.videoCube{direction:ltr;font-size:11px;margin:0;color:#000;border-width:0}.videoCube.vertical:first-child{border-top:0;margin-top:0}.videoCube.horizontal:first-child{border-left:0;margin-left:0}.videoCube_hover,div.videoCube:hover{background-color:#ebf0ff;color:#000}.videoCube .thumbBlock{margin:0;border-style:solid}.videoCube a img,.videoCube img{border-color:#ececec}.videoCube .video-label-box{margin-left:81px}.videoCube .video-label dt{font-weight:700}.videoCube .video-title{height:auto;margin-bottom:3px;white-space:normal}.videoCube .trc_inline_detail_spacer{display:inline-block;white-space:pre}.loading-animation{font-family:sans;font-size:1.5em;text-align:center;color:gray;height:100%}.trc_rbox_header{font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;text-decoration:none;color:#000}.trc_header_right_part{position:absolute;left:50%;top:0}.branding_div{overflow:visible;float:right}.branding_div img{height:20px}.videoCube .branding .logoDiv{font-size:inherit;line-height:inherit;background:0 0;margin:0;padding:0}.videoCube .branding .logoDiv a{vertical-align:inherit;color:inherit;line-height:inherit}.videoCube .branding .logoDiv a span{vertical-align:inherit}.trc_related_container .videoCube .branding .attribution-disclosure-link-sponsored{display:inline-block;float:none}.trc_related_container .videoCube .branding .attribution-disclosure-link-sponsored.align-disclosure-right{float:right;margin-left:auto;padding-left:2px}.videoCube .video-label-box .branding.composite-branding{display:-webkit-box;display:-ms-flexbox;display:flex}.branding.composite-branding>*{display:inline-block;vertical-align:bottom}.branding .branding-separator{margin:0 2px;font-weight:400}.branding .branding-inner{text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.video-label-box span.branding.inline-branding{display:inline-block}.trc_related_container div.horizontal{float:left;box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-webkit-box-sizing:border-box}.trc_related_container DIV.videoCube.thumbnail_bottom .thumbBlock,.trc_related_container DIV.videoCube.thumbnail_top .thumbBlock{float:none}.vidiscovery-note{display:none}.videoCube .thumbBlock .trc_sponsored_overlay_base{display:block;width:auto;margin-left:0;position:absolute;color:#fff!important}.videoCube .thumbBlock .trc_sponsored_overlay{opacity:.6;display:block;position:absolute}.videoCube .thumbBlock .trc_sponsored_overlay_base .sponsored{position:relative;display:block;overflow:visible;width:auto;text-align:center;padding:0 5px;margin-top:0}.videoCube .thumbBlock .trc_sponsored_overlay_base.round .trc_sponsored_overlay{border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px}.videoCube .thumbBlock .trc_sponsored_overlay_base.round{margin-left:4px}.thumbnail-emblem,.videoCube .thumbnail-overlay,.videoCube:hover .thumbnail-overlay,.videoCube_hover .thumbnail-overlay{position:absolute;background:transparent no-repeat;background-size:contain;z-index:50}.thumbnail_bottom{padding-bottom:8px}.trc_related_container .logoDiv{font-family:Arial,Helvetica,sans-serif;white-space:nowrap;font-size:9px}.trc_related_container .logoDiv a{font-size:9px;text-decoration:none!important;color:#000;margin-right:1px;vertical-align:text-bottom}.logoDiv a span:hover{text-decoration:underline}.trc_rbox_header .logoDiv{font-size:1em}.trc_tl .trc_rbox_header .logoDiv{position:relative;z-index:1}.trc_tl .trc_rbox_header_span .trc_header_right_column{position:absolute;width:48%;left:52%;top:0}.trc_tl .trc_rbox_div .videoCube.horizontal{clear:left}.trc_tl .trc_rbox_div .videoCube.trc_tl_right_col{float:none;clear:right;margin-left:auto}.trc_tl .videoCube .video-title .branding{line-height:1.3em}.trc_tl .videoCube:hover span.branding,.trc_tl .videoCube_hover span.branding{text-decoration:none}.trc_tl .trc_rbox_div .videoCube.thumbnail_none a{vertical-align:top;overflow:visible}.trc_tl .videoCube .video-label-box{display:inline-block;vertical-align:top;width:100%}.trc_rbox_container.trc_expandable{overflow:hidden;max-height:0;transition-property:max-height;-webkit-transition-property:max-height;-moz-transition-property:max-height;-o-transition-property:max-height;-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);-o-transform:translateZ(0);transform:translateZ(0)}.trc_related_container .videoCube .thumbBlock .branding{position:absolute;bottom:0;z-index:1;width:100%;margin:0;padding:5px 0;text-align:center}.syndicatedItem .branding{margin:0}.trc-inplayer-rbox{background:#333;background:rgba(30,30,30,.9);bottom:0;position:absolute;height:300px;text-align:center}.trc-inplayer-rbox .trc_rbox_container{margin:50px auto 0;width:640px}.trc_rbox.trc-auto-size{width:100%;height:100%}.videoCube.thumbnail_under .video-title{min-height:2.58em}.videoCube.thumbnail_under .tbl-text-over-container{width:100%;position:absolute;z-index:1;left:0;bottom:0;min-height:66%;max-height:66%;padding-top:2px;padding-bottom:2px;line-height:1.25em}.videoCube.thumbnail_under .tbl-text-over-container .tbl-text-over{height:100%;width:100%;position:absolute;background:linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 100%)}.videoCube.thumbnail_under .tbl-text-over-container span.branding,.videoCube.thumbnail_under .tbl-text-over-container span.video-description,.videoCube.thumbnail_under .tbl-text-over-container span.video-title{position:relative;z-index:1;padding:0 8px;margin:0}.videoCube.thumbnail_under .tbl-text-over-container span.video-title{margin-bottom:6px;min-height:auto}.videoCube.thumbnail_under .tbl-text-over-container .video-label-box{position:absolute;bottom:0;left:0;width:100%;padding:0 8px 6px 8px;min-height:auto}.trc-auto-size .trc_rbox_outer .trc_rbox_div{height:auto;width:auto}.trc-auto-size .trc_rbox_div .videoCube{height:auto}.trc-auto-size .trc_rbox_div .videoCube.trc-first-recommendation{margin-top:0}.trc_rbox .trc_rbox_outer .trc_rbox_div .videoCube.trc-first-in-row{margin-left:0}.trc_elastic .trc_rbox{width:auto}.trc_elastic .videoCube{overflow:hidden}.trc_elastic .videoCube .thumbBlock{background:transparent no-repeat center center;background-size:cover;position:absolute;display:inline-block;top:0;right:0;bottom:0;left:0;margin-left:0;margin-right:0}.trc_elastic .thumbBlock_holder{position:relative;width:100%}.trc_elastic .thumbnail_start .thumbBlock_holder{float:left;margin-right:10px}.trc_elastic .thumbnail_start.item-has-pre-label .thumbBlock_holder{margin-right:0}.trc_elastic .videoCube_aspect{width:1px}.trc_elastic .trc_rbox .trc_rbox_div{height:auto}.trc_elastic .thumbnail_start .trc-pre-label{float:left;padding-right:10px}.trc_elastic .thumbnail_start.trc-split-label .trc-main-label{float:left;padding-left:10px}.trc_elastic .video-label-box{display:block}.trc_elastic .thumbnail_start .video-label-box{box-sizing:border-box}.trc_user_adChoice_btn{background:url(//cdn.taboola.com/static/c5/c5ef96bc-30ab-456a-b3d5-a84f367c6a46.svg) no-repeat scroll 0 0 rgba(255,255,255,1);border-radius:0 0 0 5px;width:16px;height:16px;position:absolute;right:0;top:0;z-index:9000;cursor:pointer;border-width:2px 0 2px 4px;border-style:solid;border-color:#fff;opacity:.7;background-size:contain;visibility:hidden}.videoCube:hover .trc_user_adChoice_btn,.videoCube_hover .trc_user_adChoice_btn{visibility:visible}.videoCube .trc_user_adChoice_btn_static{visibility:visible}.p-video-overlay-container{position:absolute;width:100%;height:100%;top:0;left:0;background-color:transparent}.p-video-overlay.p-video-overlay-show{display:flex}.p-video-overlay{display:none;background-color:#000;opacity:.7;width:100%;height:100%;flex-direction:column}.p-video-overlay-action{color:#fff;width:100%;direction:ltr;text-align:center;display:flex;justify-content:center;flex-direction:column}.p-video-overlay-action.p-video-back-action{height:34%}.p-video-back-action-label{font-family:Helvetica Neue,serif;font-size:14px;font-weight:200;letter-spacing:1px}.p-video-overlay-action.p-video-goto-action{height:66%}.p-video-goto-action-url{font-family:Helvetica Neue,serif;font-size:24px;font-weight:400;text-decoration:underline;margin-top:5px}.p-video-goto-action-label{font-family:Helvetica Neue,serif;font-size:14px;font-weight:100;letter-spacing:1px}.trc_related_container .trc_clearer{clear:both;height:0;overflow:hidden;font-size:0;line-height:0;visibility:hidden}.link-adc{float:right!important}.trc-widget-footer .logoDiv{line-height:normal;padding-bottom:5px}.trc-widget-footer .link-adc a .trc_adc_wrapper,.trc_header_ext .link-adc a .trc_adc_wrapper{height:12px;width:18px;display:inline-block;padding-left:1px;margin-bottom:2px}.trc-widget-footer .link-adc a .trc_adc_b_logo,.trc-widget-footer .link-adc a .trc_adc_s_logo,.trc_header_ext .link-adc a .trc_adc_b_logo,.trc_header_ext .link-adc a .trc_adc_s_logo{vertical-align:middle;height:15px;display:inline-block;margin-top:-1px}.trc-widget-footer .link-adc a .trc_adc_s_logo,.trc_header_ext .link-adc a .trc_adc_s_logo{width:12px;height:14px;background:url(//cdn.taboola.com/static/c5/c5ef96bc-30ab-456a-b3d5-a84f367c6a46.svg) no-repeat;background-size:contain;vertical-align:middle}.trc-widget-footer .link-adc a .trc_adc_b_logo,.trc_header_ext .link-adc a .trc_adc_b_logo{width:77px;background:#fff url(//cdn.taboola.com/libtrc/static/thumbnails/0781f9c5a8637d1e162874f157460048.png) no-repeat!important;right:-1px;display:none;position:absolute}.logoDiv .trc_mobile_adc_link,.logoDiv .trc_mobile_attribution_link,.logoDiv .trc_mobile_disclosure_link{display:none}.logoDiv .trc_desktop_adc_link,.logoDiv .trc_desktop_attribution_link,.logoDiv .trc_desktop_disclosure_link{display:inline}@media screen and (max-width:767px){.logoDiv .trc_mobile_disclosure_link{display:inline}.logoDiv .trc_mobile_attribution_link{display:inline}.logoDiv .trc_mobile_adc_link{display:inline}.logoDiv .trc_desktop_disclosure_link{display:none}.logoDiv .trc_desktop_attribution_link{display:none}.logoDiv .trc_desktop_adc_link{display:none}}.trc_in_iframe .logoDiv .trc_mobile_attribution_link,.trc_in_iframe .logoDiv .trc_mobile_disclosure_link{display:inline}.trc_in_iframe .logoDiv .trc_desktop_attribution_link,.trc_in_iframe .logoDiv .trc_desktop_disclosure_link{display:none}.trc_related_container .logoDiv,.trc_related_container .trc_header_ext .logoDiv{float:right}.trc_related_container .logoDiv+.logoDiv{margin-right:2px}.trc_related_container .attribution-disclosure-link-hybrid,.trc_related_container .attribution-disclosure-link-sponsored{display:none}.trc-w2f.trc-content-sponsored .attribution-disclosure-link-sponsored,.trc_related_container .trc-content-sponsored .attribution-disclosure-link-sponsored{display:block}.trc-w2f.trc-content-hybrid .attribution-disclosure-link-hybrid,.trc_related_container .trc-content-hybrid .attribution-disclosure-link-hybrid{display:block}.trc_related_container .trc-widget-footer:hover a span,.trc_related_container .trc_header_ext:hover a span{text-decoration:underline!important}.logoDiv a span.trc_logos_v_align{display:inline-block!important;font-size:15px!important;line-height:1em!important;width:0!important}.trc_related_container .trc-widget-footer:hover a span.trc_adc_wrapper,.trc_related_container .trc-widget-footer:hover a span.trc_logos_v_align,.trc_related_container .trc_header_ext:hover a span.trc_adc_wrapper,.trc_related_container .trc_header_ext:hover a span.trc_logos_v_align{text-decoration:none!important}.trc_related_container .trc_rbox_header_span .trc_header_right_column{display:none}.trc_related_container img{max-width:none}.trc_related_container{clear:both}.tbl-loading-spinner{width:100%;height:40px;background:url(//cdn.taboola.com/static/91/91a25024-792d-4b52-84e6-ad1478c3f552.gif) center center no-repeat;background-size:40px}.tbl-hidden{display:none!important}.tbl-invisible{opacity:0;pointer-events:none}.tbl-batch-anchor{width:100%;height:1px}.iw_video_frame .trc_rbox_div{overflow:hidden}.trc-w2f .trc_rbox .trc-widget-footer,.trc-w2f .trc_rbox .trc_rbox_header{display:none!important}.thumbnails-a .video-title{font-family:Arial, Helvetica, sans-serif;font-size:14.0px;line-height:19.0px;font-weight:bold;max-height:76.0px;*height:76.0px;color:#000000;text-decoration:none;}.thumbnails-a .video-description{font-family:Arial, Helvetica, sans-serif;font-size:10px;line-height:11px;font-weight:normal;max-height:2.2em;*height:2.2em;color:black;text-decoration:none;}.thumbnails-a .trc_rbox_div{width:auto;_width:99%;height:410px;border-width:0;padding:0;}.thumbnails-a .videoCube .video-duration{left:36px;display:none;}.thumbnails-a .video-label,.thumbnails-a .sponsored,.thumbnails-a .sponsored-url{font-family:Arial, Helvetica, sans-serif;}.thumbnails-a .trc_rbox_header{font-family:Arial, Helvetica, sans-serif;font-size:15.0px;font-weight:bold;text-decoration:none;color:#fff;border-width:0;background:transparent;border-style:none;border-color:#D6D5D3;padding:0px 0px 6px 0px;line-height:1.2em;display:block;margin:0px 0px 0px 0px;position:relative;background-color:transparent;box-sizing:initial;height:auto;width:auto;_width:auto;}.thumbnails-a .sponsored-url{font-size:9px;font-weight:bold;text-decoration:underline;color:green;}.thumbnails-a .sponsored{font-size:9px;font-weight:normal;text-decoration:none;color:#9C9A9C;}.thumbnails-a .video-category{font-size:10px;font-weight:normal;text-decoration:none;color:black;}.thumbnails-a .video-duration-detail{font-size:10px;font-weight:normal;text-decoration:none;color:black;}.thumbnails-a .video-rating{font-size:10px;font-weight:normal;text-decoration:none;color:black;}.thumbnails-a .video-uploader{font-size:10px;font-weight:normal;text-decoration:none;color:black;}.thumbnails-a .video-views{font-size:10px;font-weight:normal;text-decoration:none;color:black;}.thumbnails-a .video-published-date{font-size:10px;font-weight:normal;text-decoration:none;color:black;display:inherit;}.thumbnails-a .sponsored-default .video-title{max-height:2.58em;*height:2.58em;}.thumbnails-a .sponsored-default .video-description{max-height:2.2em;*height:2.2em;}.thumbnails-a .videoCube{width:auto;_width:auto;background-color:transparent;border-width:1px 1px 1px 1px;border-color:#D6D5D3;padding:0px 0px 0px 0px;height:auto;margin-left:0px;margin-top:0px;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;border-style:NONE;}.thumbnails-a div.videoCube:hover,.thumbnails-a  div.videoCube_hover{background-color:transparent;}.thumbnails-a .sponsored-default{background-color:#F7F6C6;}.thumbnails-a div.sponsored-default:hover,.thumbnails-a  div.sponsored-default.videoCube_hover{background-color:inherit;}.thumbnails-a .videoCube .thumbnail-overlay{background-image:null;background-position:5% 5%;}.thumbnails-a .videoCube:hover .thumbnail-overlay,.thumbnails-a  .videoCube_hover .thumbnail-overlay{background-image:null;}.thumbnails-a .trc_rbox_border_elm{border-color:darkgray;}.thumbnails-a .videoCube .thumbBlock{border-width:0px;border-color:darkgray;}.thumbnails-a div.videoCube:hover .thumbBlock{border-color:inherit;}.thumbnails-a .pager_enabled{color:#0056b3;}.thumbnails-a .trc_pager_counter{color:#000000;}.thumbnails-a .pager_disabled{color:#7d898f;}.thumbnails-a .trc_pager_prev:hover,.thumbnails-a  .trc_pager_next:hover{color:#6497ED;}.thumbnails-a .trc_pager_selected{color:#0056b3;}.thumbnails-a .trc_pager_unselected{color:#7d898f;}.thumbnails-a div.trc_pager_pages div:hover{color:#6497ED;}.thumbnails-a .trc_lightbox_overlay{background-color:#000000;opacity:0.70;filter:alpha(opacity=70);}.thumbnails-a .video-label-box{text-align:left;height:76px;margin:5px 0px 0px 0px;}.thumbnails-a .trc_sponsored_overlay{background-color:black;}.thumbnails-a .thumbnail-emblem{background-position:5% 5%;width:35;_width:35;height:35;}.thumbnails-a .videoCube .sponsored{margin-top:-7px;}.thumbnails-a {width:300px;_width:300px;border-width:0px 0px 0px 0px;border-style:solid solid solid solid;border-color:#DFDFDF;padding:0px 0px 0px 0px;border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;box-shadow:none;}.thumbnails-a .videoCube.vertical{border-style:solid none none none;}.thumbnails-a .videoCube.horizontal{border-style:none;}.thumbnails-a .trc_pager_prev,.thumbnails-a .trc_pager_next{font-size:12px;font-weight:normal;text-decoration:none;}.thumbnails-a .trc_pager_pages div{font-size:12px;font-weight:normal;text-decoration:none;}.thumbnails-a .video-external-data{font-size:10px;font-weight:normal;text-decoration:none;color:black;}.thumbnails-a .trc_pager div{font-family:serif;}.thumbnails-a .playerCube .thumbnail-overlay{background-image:null;background-position:5% 5%;}.thumbnails-a .playerCube:hover .thumbnail-overlay,.thumbnails-a  .playerCube_hover .thumbnail-overlay{background-image:null;}.thumbnails-a .playerCube .videoCube{background-color:transparent;border-color:#D6D5D3;border-width:1px;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;margin-left:0px;margin-top:0px;padding:3px;}.thumbnails-a .playerCube .videoCube.horizontal{border-style:none none none none;}.thumbnails-a .playerCube .videoCube .video-label-box{margin-left:81px;margin-right:0px;}.thumbnails-a .playerCube .video-duration-detail{font-size:10px;font-weight:normal;text-decoration:none;color:black;}.thumbnails-a .playerCube .video-external-data{font-size:10px;font-weight:normal;text-decoration:none;color:black;}.thumbnails-a .playerCube .video-label-box{text-align:left;}.thumbnails-a .playerCube .video-published-date{font-size:10px;font-weight:normal;text-decoration:none;color:black;}.thumbnails-a .playerCube .video-category{font-size:10px;font-weight:normal;text-decoration:none;color:black;}.thumbnails-a .playerCube .video-description{font-family:Arial, Helvetica, sans-serif;font-size:10px;line-height:11px;font-weight:normal;text-decoration:none;max-height:2.2em;*height:2.2em;color:black;}.thumbnails-a .playerCube .videoCube .video-duration{display:block;left:36px;}.thumbnails-a .playerCube .videoCube .thumbBlock{border-width:0px;border-color:darkgray;}.thumbnails-a .playerCube .video-rating{font-size:10px;font-weight:normal;text-decoration:none;color:black;}.thumbnails-a .playerCube .video-uploader{font-size:10px;font-weight:normal;text-decoration:none;color:black;}.thumbnails-a .playerCube .video-views{font-size:10px;font-weight:normal;text-decoration:none;color:black;}.thumbnails-a .playerCube .video-title{font-family:Arial, Helvetica, sans-serif;text-decoration:none;font-size:14px;line-height:17.5px;font-weight:bold;max-height:2.58em;*height:2.58em;color:black;}.thumbnails-a .playerCube div.videoCube:hover,.thumbnails-a  div.videoCube_hover{background-color:transparent;}.thumbnails-a .whatsThisSyndicated{font-family:Arial, Verdana, sans-serif;font-size:9px;font-weight:normal;color:black;text-decoration:none;padding:0;}.thumbnails-a div.syndicatedItem:hover,.thumbnails-a  div.syndicatedItem.videoCube_hover{background-color:transparent;}.thumbnails-a div.syndicatedItem:hover .thumbBlock{border-color:inherit;}.thumbnails-a .videoCube.syndicatedItem{background-color:transparent;border-color:#D6D5D3;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;border-width:1px 1px 1px 1px;border-style:NONE;}.thumbnails-a .videoCube.syndicatedItem.horizontal{border-style:none;}.thumbnails-a .videoCube.syndicatedItem .thumbBlock{border-color:darkgray;border-width:0px;}.thumbnails-a .videoCube.syndicatedItem .thumbnail-overlay{background-image:null;background-position:5% 5%;}.thumbnails-a .videoCube.syndicatedItem.vertical{border-style:solid none none none;}.thumbnails-a .videoCube.syndicatedItem .video-duration{display:none;left:36px;}.thumbnails-a .syndicatedItem{background-color:transparent;}.thumbnails-a .syndicatedItem .video-description{max-height:2.2em;*height:2.2em;color:black;font-family:Arial, Helvetica, sans-serif;font-size:10px;font-weight:normal;line-height:11px;text-decoration:none;}.thumbnails-a .syndicatedItem .video-title{max-height:57.0px;*height:57.0px;color:#000000;font-family:Arial, Helvetica, sans-serif;font-size:14.0px;line-height:19.0px;font-weight:bold;text-decoration:none;padding:0;}.thumbnails-a .syndicatedItem .sponsored{color:#9C9A9C;font-size:9px;font-weight:normal;text-decoration:none;}.thumbnails-a .syndicatedItem .sponsored-url{color:green;font-size:9px;font-weight:bold;text-decoration:underline;}.thumbnails-a .syndicatedItem .video-category{color:black;font-size:10px;font-weight:normal;text-decoration:none;}.thumbnails-a .syndicatedItem .video-duration-detail{color:black;font-size:10px;font-weight:normal;text-decoration:none;}.thumbnails-a .syndicatedItem .video-external-data{color:black;font-size:10px;font-weight:normal;text-decoration:none;}.thumbnails-a .syndicatedItem .video-published-date{color:black;font-size:10px;font-weight:normal;text-decoration:none;display:inherit;}.thumbnails-a .syndicatedItem .video-rating{color:black;font-size:10px;font-weight:normal;text-decoration:none;}.thumbnails-a .syndicatedItem .video-uploader{color:black;font-size:10px;font-weight:normal;text-decoration:none;}.thumbnails-a .syndicatedItem .video-views{color:black;font-size:10px;font-weight:normal;text-decoration:none;}.thumbnails-a .syndicatedItem .branding{color:#999999;font-size:11.0px;font-weight:bold;text-decoration:none;font-family:Arial, Helvetica, sans-serif;background-image:null;text-align:left;line-height:19.0px;}.thumbnails-a .videoCube.syndicatedItem .thumbBlock .branding{text-align:left;background-color:transparent;display:none;left:0px;color:black;font-size:10px;font-weight:normal;text-decoration:none;font-family:Arial, Helvetica, sans-serif;background-image:null;}.thumbnails-a .videoCube.syndicatedItem .thumbBlock .static-text{text-align:left;background-color:black;display:none;color:white;font-size:10px;font-weight:normal;text-decoration:none;font-family:Arial, Helvetica, sans-serif;}.thumbnails-a .videoCube.thumbnail_start .thumbBlock_holder{width:40%;_width:40%;}.thumbnails-a .trc_rbox_header_icon_img{margin:0px;height:18px;}.thumbnails-a .video-icon-img{margin:0px;height:18px;}.thumbnails-a .video-label-box.trc-pre-label{height:0px;}.thumbnails-a .syndicatedItem .video-label-box.trc-pre-label{height:0px;}.thumbnails-a .videoCube.thumbnail_start .trc-pre-label{width:60%;_width:60%;}.thumbnails-a .videoCube.thumbnail_start.trc-split-label .trc-main-label{width:30%;_width:30%;}.thumbnails-a .videoCube.thumbnail_start.trc-split-label .trc-pre-label{width:30%;_width:30%;}.thumbnails-a .videoCube .video-label-box.trc-pre-label{margin:0px 0px 0px 0px;}.thumbnails-a .branding{color:#999999;font-size:11.0px;font-weight:bold;text-decoration:none;font-family:Arial, Helvetica, sans-serif;background-image:null;text-align:left;line-height:19.0px;}.thumbnails-a .branding .logoDiv a span{color:inherit;font-size:inherit;}.thumbnails-a .branding div.logoDiv{font-family:inherit;}.thumbnails-a .videoCube .thumbBlock .static-text{font-weight:normal;font-family:Arial, Helvetica, sans-serif;text-decoration:none;font-size:11px;background-color:#a30202;display:block;color:#ffffff;text-align:left;}.thumbnails-a .syndicatedItem .video-label-box{height:76px;margin:5px 0px 0px 0px;}.thumbnails-a .logoDiv a span{font-size:11px;color:#000000;display:inline;font-weight:normal;}.thumbnails-a .tbl-cta-style .cta-button{font-family:Helvetica, Arial, sans-serif;background-color:transparent;border-color:#999990;color:#333333;}.thumbnails-a .tbl-cta-style .cta-button:hover{color:inherit;border-color:#999990;}.thumbnails-a .videoCube:hover .video-label-box .video-title{text-decoration:underline;}.thumbnails-a .videoCube .video-label-box .video-title{margin:0 0 0 0;}.thumbnails-a .video-label-box .branding{display:block;}.thumbnails-a .trc_header_left_column{width:48%;_width:48%;display:inline-block;height:auto;}.thumbnails-a .trc_rbox_header .trc_header_ext{position:relative;top:auto;right:auto;}.thumbnails-a .logoDiv a{font-size:100%;}.thumbnails-a .videoCube a{padding:0 0 0 0;}.thumbnails-a .trc_rbox_header .logoDiv{line-height:normal;}.thumbnails-a .trc_rbox_header_span .trc_header_right_column{height:auto;}.thumbnails-a .trc_header_right_part{margin:0px 0 0 0;}.thumbnails-a .videoCube .story-widget.story-widget-text-under .tbl-text-under-title-background{background-color:#EBEBEB;}.thumbnails-a .videoCube .story-widget.story-widget-text-under .tbl-ui-line{background-color:#333333;}.thumbnails-a .tbl-recommendation-reel .tbl-text-under-title-background{background-color:#EBEBEB;}.thumbnails-a .tbl-recommendation-reel .tbl-ui-line{background-color:#333333;}/* s-split-thumbnails-a */.thumbnails-a img {
+        max-width: none;
+}
+
+/* override bootstrap default span definitions */
+.thumbnails-a [class*=span] {
+    float:none;
+    margin-left:0;
+}
+
+
+.thumbnails-a .trc_rbox_header {
+}
+
+.thumbnails-a .trc_rbox_header_span .trc_header_right_column {
+        display: none;
+	background: transparent;
+}
+
+.thumbnails-a .trc_rbox_header .logoDiv {
+        font-size: inherit;
+}
+
+.thumbnails-a .logoDiv a {
+}
+
+.thumbnails-a .logoDiv a span {
+}
+
+.thumbnails-a .videoCube a {
+}
+
+.thumbnails-a .thumbBlock {
+    margin: 0;
+}
+
+.thumbnails-a .videoCube .video-label-box .video-title {
+}
+
+.thumbnails-a .videoCube:hover .video-label-box .video-title {
+}
+
+.thumbnails-a .video-label-box .branding {
+	
+}
+
+.thumbnails-a .trc_header_left_column {
+	background: transparent;
+}
+
+.thumbnails-a .trc_rbox_header .logoDiv a {
+	font-size: 100%;
+}
+
+.thumbnails-a .trc_rbox_header .trc_header_ext {
+}
+
+.thumbnails-a .trc_header_right_part {
+}
+/* e-split-thumbnails-a */</style><style type="text/css">@media screen and (min-width: 0px) and (max-width: 1px) {.trc_elastic_thumbnails-a .trc_rbox_outer .videoCube .video-label-box {height:auto;}.trc_elastic_thumbnails-a .trc_rbox_outer .videoCube {margin-bottom:10px;}.trc_elastic_thumbnails-a .trc_rbox_outer{margin-left:-2%;}.trc_elastic_thumbnails-a .videoCube_aspect{padding-bottom:50%; width: 100%;}.trc_elastic_thumbnails-a .videoCube{width: 97.99%; position: relative; float: left; margin: 0 0 2% 0; margin-left: 2%;}.trc_elastic_thumbnails-a div.videoCube:nth-of-type(-n+7){display:block;visibility:visible;}.trc_elastic_thumbnails-a div.videoCube:nth-of-type(n+8){display:none;visibility:hidden;}} @media screen and (min-width: 2px) and (max-width: 520px) {.trc_elastic_thumbnails-a .trc_rbox_outer .videoCube .video-label-box {height:auto;}.trc_elastic_thumbnails-a .trc_rbox_outer .videoCube {margin-bottom:10px;}.trc_elastic_thumbnails-a .trc_rbox_outer{margin-left:-2%;}.trc_elastic_thumbnails-a .videoCube_aspect{padding-bottom:50%; width: 100%;}.trc_elastic_thumbnails-a .videoCube{width: 97.99%; position: relative; float: left; margin: 0 0 2% 0; margin-left: 2%;}.trc_elastic_thumbnails-a div.videoCube:nth-of-type(-n+4){display:block;visibility:visible;}.trc_elastic_thumbnails-a div.videoCube:nth-of-type(n+5){display:none;visibility:hidden;}} @media screen and (min-width: 521px) {.trc_elastic_thumbnails-a .trc_rbox_outer{margin-left:-2%;}.trc_elastic_thumbnails-a .videoCube_aspect{padding-bottom:83.33333333333334%; width: 100%;}.trc_elastic_thumbnails-a .videoCube{width: 31.33%; position: relative; float: left; margin: 0 0 2% 0; margin-left: 2%;}.trc_elastic_thumbnails-a div.videoCube:nth-of-type(-n+6){display:block;visibility:visible;}.trc_elastic_thumbnails-a div.videoCube:nth-of-type(n+7){display:none;visibility:hidden;}} </style><style type="text/css">.thumbnail-emblem { height: 35px; width: 35px; }.trc_related_container .thumbnail-emblem.bottom-right, .trc_related_container .static-text.bottom-right { bottom: 0; right: 0; background-position: bottom; }.trc_related_container .thumbnail-emblem.top-right, .trc_related_container .static-text.top-right { top: 0; right: 0; background-position: top; }.trc_related_container .thumbnail-emblem.bottom-left, .trc_related_container .static-text.bottom-left { bottom: 0; left: 0; background-position: bottom; }.trc_related_container .thumbnail-emblem.top-left, .trc_related_container .static-text.top-left { top: 0; left: 0; background-position: top; }.trc_related_container .thumbnail-emblem.top, .trc_related_container .static-text.top { width: 100%; top: 0; }.trc_related_container .thumbnail-emblem.bottom, .trc_related_container .static-text.bottom { width: 100%; bottom: 0; padding: 2px 0; }.trc_related_container .videoCube .thumbBlock .static-text { position: absolute; z-index: 1; margin: 0; padding: 5px; display: block; opacity: 0.7; } .trc_related_container .videoCube .thumbBlock .static-text.tbl-fixed-label { opacity: 1; padding: 0 5px; text-align: center; } .trc_related_container .videoCube .thumbBlock .static-text.tbl-fixed-label.tbl-small-label { min-width: 107px; min-height: 27px; line-height: 27px; letter-spacing: 0.31px; } .trc_related_container .videoCube .thumbBlock .static-text.tbl-fixed-label.tbl-big-label { min-width: 140px; min-height: 33px; font-size: 14px; line-height: 33px; letter-spacing: 0.39px; }.trc_related_container .thumbnail-emblem { background-position-x: center; }</style><style type="text/css">.trc_user_exclude_btn { background: url("//cdn.taboola.com/libtrc/static/thumbnails/f539211219b796ffbb49949997c764f0.png") no-repeat scroll 0 0 transparent; width: 12px; height: 12px; position: absolute; right: 2px; top: 2px; z-index: 9000; cursor: pointer; visibility: hidden; }.trc_undo_btn { font-family: Arial, Helvetica, sans-serif; font-size: 11px; line-height: 14px; font-weight: normal; color: #3366CC; text-decoration: underline; cursor: pointer; position: absolute; right: 2px; top: 2px; padding: 0 1px; z-index: 11000; visibility: hidden; }.videoCube:hover .trc_user_exclude_btn,.videoCube_hover .trc_user_exclude_btn,.trc_user_excluded.videoCube:hover .trc_undo_btn,.trc_user_excluded.videoCube_hover .trc_undo_btn,.trc_undo_btn.trc_anchor { visibility: visible; }.videoCube.trc_user_excluded .trc_user_exclude_btn { visibility: hidden; }.trc_fade { opacity: 0; filter: alpha(opacity=0); visibility: hidden; -webkit-transition: opacity 500ms 0s, visibility 0s 500ms; -moz-transition: opacity 500ms 0s, visibility 0s 500ms; -ms-transition: opacity 500ms 0s, visibility 0s 500ms; -o-transition: opacity 500ms 0s, visibility 0s 500ms; transition: opacity 500ms 0s, visibility 0s 500ms; }.trc_fade.trc_in,.trc_user_excluded .trc_exclude_overlay { visibility: visible; opacity: 1; filter: alpha(opacity=100); -webkit-transition-delay: 0s, 0s; -moz-transition-delay: 0s, 0s; -ms-transition-delay: 0s, 0s; -o-transition-delay: 0s, 0s; transition-delay: 0s, 0s; }.trc_excludable .trc_exclude_overlay { position: absolute; z-index: 10000; top: 0; left: 0; width: 100%; height: 100%; cursor: default; background-color: white; /* this is to make elements from underneath this overlay unclickable in IE */ }.videoCube.trc_user_excluded .trc_exclude_overlay { visibility: visible; opacity: 0.8; filter: alpha(opacity=80); }.videoCube.trc_user_excluded .thumbBlock { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#grayscale"); filter: gray; -webkit-filter: grayscale(100%); }.videoCube.trc_user_excluded:hover a .video-label-box .video-title,.videoCube_hover.trc_user_excluded a .video-label-box .video-title { text-decoration: none; }.videoCube.trc_user_excluded a .video-label-box *,.videoCube.trc_user_excluded:hover a .video-label-box *,.videoCube_hover.trc_user_excluded a .video-label-box * { color: #000000; overflow: hidden; /* fixes a bug in IE7 - opacity does not work with overflow: visible */ -webkit-transition: color 500ms 0s; -moz-transition: color 500ms 0s; -ms-transition: color 500ms 0s; -o-transition: color 500ms 0s; transition: color 500ms 0s; }
+                .trc_popover_aug_container { position: static; }#tbl-aug-z2xchv #tbl-aug-qua58j #tbl-aug-7umuf6 .trc_popover { position: absolute; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 16px; color: #000000; cursor: default; top: 0; right: 0; z-index: 12000; width: 180px; padding: 1px; text-align: left; white-space: normal; background-color: #ffffff; border: 1px solid rgba(0, 0, 0, 0.2); -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); -ms-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); -webkit-background-clip: padding-box; -moz-background-clip: padding-box; -ms-background-clip: padding-box; -o-background-clip: padding-box; background-clip: padding-box; -moz-background-clip: padding; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; -ms-box-sizing: content-box; -o-box-sizing: content-box; box-sizing: content-box; } #tbl-aug-z2xchv #tbl-aug-qua58j #tbl-aug-7umuf6 .trc_popover.trc_bottom { margin-top: 10px; } #tbl-aug-z2xchv #tbl-aug-qua58j #tbl-aug-7umuf6 .trc_popover.trc_bottom .trc_popover_arrow { top: -11px; right: 11px; margin-left: -11px; border-bottom-color: #999; border-bottom-color: rgba(0, 0, 0, 0.25); border-top-width: 0; } #tbl-aug-z2xchv #tbl-aug-qua58j #tbl-aug-7umuf6 .trc_popover.trc_bottom .trc_popover_arrow:after { top: 1px; margin-left: -10px; border-bottom-color: #ffffff; border-top-width: 0; } #tbl-aug-z2xchv #tbl-aug-qua58j #tbl-aug-7umuf6 .trc_popover iframe { width: 100%; } #tbl-aug-z2xchv #tbl-aug-qua58j #tbl-aug-7umuf6 .trc_popover .trc_popover_arrow, #tbl-aug-z2xchv #tbl-aug-qua58j #tbl-aug-7umuf6 .trc_popover .trc_popover_arrow:after { position: absolute; display: block; width: 0; height: 0; border: solid transparent; } #tbl-aug-z2xchv #tbl-aug-qua58j #tbl-aug-7umuf6 .trc_popover .trc_popover_arrow { border-width: 11px; } #tbl-aug-z2xchv #tbl-aug-qua58j #tbl-aug-7umuf6 .trc_popover .trc_popover_arrow:after { border-width: 10px; content: ""; }#tbl-aug-z2xchv #tbl-aug-qua58j #tbl-aug-7umuf6 .trc_popover_fade { visibility: hidden; opacity: 0; filter: alpha(opacity=0); -webkit-transition: opacity 500ms 0s, visibility 0s 500ms; -moz-transition: opacity 500ms 0s, visibility 0s 500ms; -ms-transition: opacity 500ms 0s, visibility 0s 500ms; -o-transition: opacity 500ms 0s, visibility 0s 500ms; transition: opacity 500ms 0s, visibility 0s 500ms; } #tbl-aug-z2xchv #tbl-aug-qua58j #tbl-aug-7umuf6 .trc_popover_fade.trc_in { visibility: visible; opacity: 1; filter: alpha(opacity=100); -webkit-transition-delay: 0s, 0s; -moz-transition-delay: 0s, 0s; -ms-transition-delay: 0s, 0s; -o-transition-delay: 0s, 0s; transition-delay: 0s, 0s; }</style><style type="text/css">.popupContentWrapper { font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 12px; color: #000000; } .popupContentWrapper .trc_popover_title_wrapper { padding: 8px 14px; margin: 0; font-weight: bold; background-color: #f7f7f7; border-bottom: 1px solid #ebebeb; -webkit-border-radius: 5px 5px 0 0; -moz-border-radius: 5px 5px 0 0; -ms-border-radius: 5px 5px 0 0; -o-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; } .popupContentWrapper .trc_popover_title { width: 100%; display: inline-block; vertical-align: middle; } .popupContentWrapper .trc_popover_title_text { float: left; } .popupContentWrapper .trc_popover_content_wrapper { display: inline-block; float: left; padding: 9px 14px; } .popupContentWrapper .trc_popover_content_wrapper .trc_question_container label { float: left; clear: left; width: 100%; cursor: pointer; line-height: 20px; text-align: left; } .popupContentWrapper .trc_popover_content { width: 100%; } .popupContentWrapper .trc_question_container .trc_question_title { margin: 0 0 3px; } .popupContentWrapper .trc_question_container input[type=radio] { float: left; cursor: pointer; margin: 3px 4px 0 5px; } .popupContentWrapper .trc_question_container_ie.trc_question_container input[type=radio] { margin: 0 2px 0 0; }</style><script src="a_data/UnitWidgetItemDesktop.js"></script></head>
+<body class="
+     light-theme sans-serif
+">
+    
+    <div id="container-top">
+        <p class="text-subheading icon__block">Sponsored</p>
+        
+    <div id="ad-container" data-role="ad-container" class="align--center">
+        <div id="taboola" class=" trc_related_container trc_spotlight_widget trc_in_iframe trc_elastic trc_elastic_thumbnails-a " data-placement-name="{&quot;domain&quot;: &quot;https://www.studiopieters.nl&quot;, &quot;experiment&quot;: &quot;network_default&quot;, &quot;position&quot;: &quot;top&quot;, &quot;shortname&quot;: &quot;studiopieters&quot;, &quot;variant&quot;: &quot;fallthrough&quot;}" observeid="tbl-observe-0"><div class="trc_rbox_container"><div><div id="trc_wrapper_42581" class="trc_rbox thumbnails-a trc-content-sponsored " style="overflow: hidden; display: block;"><div id="trc_header_42581" class="trc_rbox_header trc_rbox_border_elm"><div class="trc_header_ext"></div><span class="trc_rbox_header_span">.</span></div><div id="outer_42581" class="trc_rbox_outer"><div id="rbox-t2m" class="trc_rbox_div trc_rbox_border_elm"><div id="internal_trc_42581"><figure id="taboola-video" style="position: absolute; float: left; top: 0px; left: -0.5334px; width: auto; margin: 0px 0px 10.7px 14.2667px; z-index: 90;"></figure><div data-item-id="~~V1~~-2212028299941782043~~YIseraAbcqHQi9Qc_3JJcN5nvn8F0U7IEuNupAQHrAcndpXq_nTToVci-tV_1bYyPVPbFHdycXfyr1VxmozLcV7JbGFbjtizQN29Zpin8p1JlawpbYFtoRw_FVSAoDPy8yoVX_ZV1DUzrU9mgEqIxVpt34vkyVLCqQj-j_6Ik-WFwt9_72reDSrMsTKuuUo5A0aJZaK81OLpTjzWD69AyoCyNonfgReyyjlJ-CBpLfJH-qD_3RaZnbdkbwUEe5sb3LzC3rPZAhWkOGz7RcDUQ6T4qIzDjao30iJKDvjqzH1J3Vjc3de0zIhoJSH_1k7BRMiMsWt_J59zH-ihmwYd_g" data-item-title="Bowels: A Simple Trick To Empty Them Completely" data-item-thumb="http://cdn.taboola.com/libtrc/static/thumbnails/0f08117e230a85430ea52293779ac00a.jpg" data-item-syndicated="true" class="videoCube trc_spotlight_item origin-default thumbnail_top syndicatedItem videoCube_1_child trc-first-recommendation trc-spotlight-first-recommendation  trc_excludable " observeid="tbl-observe-1"><a title="Bowels: A Simple Trick To Empty Them Completely" href="https://shefence-citional.com/ad90555e-3efe-4446-b8f7-92688707aed8?utm_source=tb&amp;utm_campaign=uk_dk&amp;utm_term=disqus-widget-safetylevel20longtail09&amp;utm_content=2969659222&amp;t=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCKh00o16n1lcXnt9uSAQ&amp;dt=tb&amp;tblci=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCKh00o16n1lcXnt9uSAQ#tblciGiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCKh00o16n1lcXnt9uSAQ" rel="nofollow noopener sponsored" target="_blank" class=" item-thumbnail-href "><div class="thumbBlock_holder"><span class="thumbBlock" style="background-image: url(&quot;https://images.taboola.com/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_234%2Cw_280%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/http%3A//cdn.taboola.com/libtrc/static/thumbnails/0f08117e230a85430ea52293779ac00a.jpg&quot;);"><span class="thumbnail-overlay"></span><span class="branding">Gut Solution </span><span class="static-text top-right"></span></span><div class="videoCube_aspect"></div></div></a><a title="Bowels: A Simple Trick To Empty Them Completely" href="https://shefence-citional.com/ad90555e-3efe-4446-b8f7-92688707aed8?utm_source=tb&amp;utm_campaign=uk_dk&amp;utm_term=disqus-widget-safetylevel20longtail09&amp;utm_content=2969659222&amp;t=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCKh00o16n1lcXnt9uSAQ&amp;dt=tb&amp;tblci=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCKh00o16n1lcXnt9uSAQ#tblciGiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCKh00o16n1lcXnt9uSAQ" rel="nofollow noopener sponsored" target="_blank" class=" item-label-href "><span class="video-label-box trc-main-label "><span class="video-label video-title trc_ellipsis " style="-webkit-line-clamp: 2;">Bowels: A Simple Trick To Empty Them Completely</span><span class="branding">Gut Solution </span></span></a><div class=" trc_user_exclude_btn " title="Remove this item"></div><div class=" trc_exclude_overlay trc_fade "></div><div class=" trc_undo_btn ">Undo</div></div><div data-item-id="~~V1~~-7666563689657905958~~nnr5R7RlCaukq_xfRvn_3Mk7aHbi_PLTI5Opvw3OhDvTxvAnL2wqac4MyzR7uD46gj3kUkbS3FhelBtnsiJV6MhkDZRZzzIqDobN6rWmCPA3hYz5D3PLat6nhIftiT1l4BhVWu1Dsh65N_xRLXJJdCVePkSDvpXJ2CTyivM3XECBUvKq_n-d7w24kEDDMrNu3eDgwYdNAC4vmOVhj9JQPnHUoRHEgVyEH7Xir8H3JFdoRDEI008WASFFBX6-AgygHZcSugnvXddoVIG3IuzwtGxZoHn3UFodkVUZhWZ0wfBQIiFyKAMoup9dqEAtgoLqjrOGv-6iDoYLvQ6osB3pEQ" data-item-title="5-49 Vehicles? This Tracker Is Taking The UK By Storm" data-item-thumb="http://cdn.taboola.com/libtrc/static/thumbnails/2be2d37a26333cd7928c75c295c7d8a4.png" data-item-syndicated="true" class="videoCube trc_spotlight_item origin-default thumbnail_top syndicatedItem textItem videoCube_2_child trc_excludable " observeid="tbl-observe-2"><a title="5-49 Vehicles? This Tracker Is Taking The UK By Storm" href="https://info.expertmarket.com/brilliant-uk-vehicle-trackers?utm_campaign=2470462&amp;utm_content=3056381000&amp;cid=591427eac26cd&amp;utm_source=taboola&amp;utm_medium=cpc&amp;campaign=VT-UK-EM-July-D&amp;platform=Desktop&amp;utm_term=5-49+Vehicles%3F+This+Tracker+Is+Taking+The+UK+By+Storm&amp;content=http%3A%2F%2Fcdn.taboola.com%2Flibtrc%2Fstatic%2Fthumbnails%2F2be2d37a26333cd7928c75c295c7d8a4.png&amp;network=disqus-widget-safetylevel20longtail09&amp;title=5-49+Vehicles%3F+This+Tracker+Is+Taking+The+UK+By+Storm&amp;click-id=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiDQzEAonfvIp4y9ntwd#tblciGiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiDQzEAonfvIp4y9ntwd" rel="nofollow noopener sponsored" target="_blank" class=" item-thumbnail-href "><div class="thumbBlock_holder"><span class="thumbBlock" style="background-image: url(&quot;https://images.taboola.com/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_234%2Cw_280%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/http%3A//cdn.taboola.com/libtrc/static/thumbnails/2be2d37a26333cd7928c75c295c7d8a4.png&quot;);"><span class="thumbnail-overlay"></span><span class="branding">Expert Market Vehicle Tracking Quotes</span><span class="static-text top-right"></span></span><div class="videoCube_aspect"></div></div></a><a title="5-49 Vehicles? This Tracker Is Taking The UK By Storm" href="https://info.expertmarket.com/brilliant-uk-vehicle-trackers?utm_campaign=2470462&amp;utm_content=3056381000&amp;cid=591427eac26cd&amp;utm_source=taboola&amp;utm_medium=cpc&amp;campaign=VT-UK-EM-July-D&amp;platform=Desktop&amp;utm_term=5-49+Vehicles%3F+This+Tracker+Is+Taking+The+UK+By+Storm&amp;content=http%3A%2F%2Fcdn.taboola.com%2Flibtrc%2Fstatic%2Fthumbnails%2F2be2d37a26333cd7928c75c295c7d8a4.png&amp;network=disqus-widget-safetylevel20longtail09&amp;title=5-49+Vehicles%3F+This+Tracker+Is+Taking+The+UK+By+Storm&amp;click-id=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiDQzEAonfvIp4y9ntwd#tblciGiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiDQzEAonfvIp4y9ntwd" rel="nofollow noopener sponsored" target="_blank" class=" item-label-href "><span class="video-label-box trc-main-label "><span class="video-label video-title trc_ellipsis " style="-webkit-line-clamp: 2;">5-49 Vehicles? This Tracker Is Taking The UK By Storm</span><span class="branding">Expert Market Vehicle Tracking Quotes</span></span></a><div class=" trc_user_exclude_btn " title="Remove this item"></div><div class=" trc_exclude_overlay trc_fade "></div><div class=" trc_undo_btn ">Undo</div></div><div data-item-id="~~V1~~6946229591853814611~~HzRyvR6033UVttW1KqIf5e9KwfUpglBTPXatjkww5vnTxvAnL2wqac4MyzR7uD46gj3kUkbS3FhelBtnsiJV6MhkDZRZzzIqDobN6rWmCPA3hYz5D3PLat6nhIftiT1l4BhVWu1Dsh65N_xRLXJJdCVePkSDvpXJ2CTyivM3XECBUvKq_n-d7w24kEDDMrNuT7Y3ByFLgMTBDnBOnHV5b74286uFlOH80mRGeX4PevbPX50B5-HWSgIupXc1oKOS-0S4VKQ6azOWisivrXH8uKPj02e12n67C3Q_jTi7CRJzSXCEGtZrD1szn53IIZTl" data-item-title="This heater will be your best friend this winter" data-item-thumb="http://cdn.taboola.com/libtrc/static/thumbnails/4fbd5ab69046f22510b206d67a81df0e.jpg" data-item-syndicated="true" class="videoCube trc_spotlight_item origin-default thumbnail_top syndicatedItem textItem videoCube_3_child trc_excludable " observeid="tbl-observe-3"><a title="This heater will be your best friend this winter" href="https://prough-veridated.icu/4b0b1415-1c22-4051-950b-52d660d35b92?site=disqus-widget-safetylevel20longtail09&amp;site_id=1042962&amp;title=This+heater+will+be+your+best+friend+this+winter&amp;platform=Desktop&amp;campaign_id=14786809&amp;campaign_item_id=3057438923&amp;thumbnail=http%3A%2F%2Fcdn.taboola.com%2Flibtrc%2Fstatic%2Fthumbnails%2F4fbd5ab69046f22510b206d67a81df0e.jpg&amp;click_id=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCPlVEoj4DBy_bozJki&amp;tblci=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCPlVEoj4DBy_bozJki#tblciGiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCPlVEoj4DBy_bozJki" rel="nofollow noopener sponsored" target="_blank" class=" item-thumbnail-href "><div class="thumbBlock_holder"><span class="thumbBlock" style="background-image: url(&quot;https://images.taboola.com/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_234%2Cw_280%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/http%3A//cdn.taboola.com/libtrc/static/thumbnails/4fbd5ab69046f22510b206d67a81df0e.jpg&quot;);"><span class="thumbnail-overlay"></span><span class="branding">Winter Heating</span><span class="static-text top-right"></span></span><div class="videoCube_aspect"></div></div></a><a title="This heater will be your best friend this winter" href="https://prough-veridated.icu/4b0b1415-1c22-4051-950b-52d660d35b92?site=disqus-widget-safetylevel20longtail09&amp;site_id=1042962&amp;title=This+heater+will+be+your+best+friend+this+winter&amp;platform=Desktop&amp;campaign_id=14786809&amp;campaign_item_id=3057438923&amp;thumbnail=http%3A%2F%2Fcdn.taboola.com%2Flibtrc%2Fstatic%2Fthumbnails%2F4fbd5ab69046f22510b206d67a81df0e.jpg&amp;click_id=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCPlVEoj4DBy_bozJki&amp;tblci=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCPlVEoj4DBy_bozJki#tblciGiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCPlVEoj4DBy_bozJki" rel="nofollow noopener sponsored" target="_blank" class=" item-label-href "><span class="video-label-box trc-main-label "><span class="video-label video-title trc_ellipsis " style="-webkit-line-clamp: 2;">This heater will be your best friend this winter</span><span class="branding">Winter Heating</span></span></a><div class=" trc_user_exclude_btn " title="Remove this item"></div><div class=" trc_exclude_overlay trc_fade "></div><div class=" trc_undo_btn ">Undo</div></div><div data-item-id="~~V1~~-4590518571885191392~~yPNICpzpR7UkAmgHFVs9uVUAkvewFR6UTxnDdY_UP-8ndpXq_nTToVci-tV_1bYyPVPbFHdycXfyr1VxmozLcV7JbGFbjtizQN29Zpin8p1JlawpbYFtoRw_FVSAoDPy8yoVX_ZV1DUzrU9mgEqIxVpt34vkyVLCqQj-j_6Ik-WFwt9_72reDSrMsTKuuUo5FLbM-un5piuK6baaeciz8oCyNonfgReyyjlJ-CBpLfKbaQtTn-wCw3Ws0r4Zhjl6GiQR4bAdf_2QYOwUUrsfWJIO2iDzngMKfvVqlYbECIE" data-item-title="Our stocking filler ideas for this Christmas" data-item-thumb="https://d2a5s20526q16u.cloudfront.net/1100x471/favourite-stocking-filler-gift-ideas_1.jpg" data-item-syndicated="true" class="videoCube trc_spotlight_item origin-default thumbnail_top syndicatedItem textItem videoCube_4_child trc_excludable " observeid="tbl-observe-4"><a title="Our stocking filler ideas for this Christmas" href="https://www.dailymail.co.uk/best-buys/our-stocking-filler-ideas-for-this-christmas?utm_medium=display&amp;utm_source=taboola&amp;utm_campaign=hollister_cult_redbubble_BCO_Christmas%20_bco&amp;utm_content=bco_taboola&amp;utm_term=banner1desktop&amp;click-id=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiC27lUolOunur6uzuXEAQ&amp;tblci=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiC27lUolOunur6uzuXEAQ#tblciGiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiC27lUolOunur6uzuXEAQ" rel="nofollow noopener sponsored" target="_blank" class=" item-thumbnail-href "><div class="thumbBlock_holder"><span class="thumbBlock" style="background-image: url(&quot;https://images.taboola.com/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_234%2Cw_280%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//d2a5s20526q16u.cloudfront.net/1100x471/favourite-stocking-filler-gift-ideas_1.jpg&quot;);"><span class="thumbnail-overlay"></span><span class="branding">BestBuys</span><span class="static-text top-right"></span></span><div class="videoCube_aspect"></div></div></a><a title="Our stocking filler ideas for this Christmas" href="https://www.dailymail.co.uk/best-buys/our-stocking-filler-ideas-for-this-christmas?utm_medium=display&amp;utm_source=taboola&amp;utm_campaign=hollister_cult_redbubble_BCO_Christmas%20_bco&amp;utm_content=bco_taboola&amp;utm_term=banner1desktop&amp;click-id=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiC27lUolOunur6uzuXEAQ&amp;tblci=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiC27lUolOunur6uzuXEAQ#tblciGiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiC27lUolOunur6uzuXEAQ" rel="nofollow noopener sponsored" target="_blank" class=" item-label-href "><span class="video-label-box trc-main-label "><span class="video-label video-title trc_ellipsis " style="-webkit-line-clamp: 2;">Our stocking filler ideas for this Christmas</span><span class="branding">BestBuys</span></span></a><div class=" trc_user_exclude_btn " title="Remove this item"></div><div class=" trc_exclude_overlay trc_fade "></div><div class=" trc_undo_btn ">Undo</div></div><div data-item-id="~~V1~~4791500004083770253~~Ysr93cYY_gkVpUMJoPTehlsaWRTK8qetUapPLRVCeGXTxvAnL2wqac4MyzR7uD46gj3kUkbS3FhelBtnsiJV6MhkDZRZzzIqDobN6rWmCPA3hYz5D3PLat6nhIftiT1l4BhVWu1Dsh65N_xRLXJJdCVePkSDvpXJ2CTyivM3XECBUvKq_n-d7w24kEDDMrNupPygp-nwA-qIO2nEVSqmw74286uFlOH80mRGeX4PevY9FqcD8KCo77rQgE8wDAn7femrdvS44kwMV9ArxMn8pHyDqxh8lF-5kU_hR66E-oSUATlRQebU6RgLGD3Ot_2D" data-item-title="Is this cryptoasset the Largest challenger to Bitcoin and Ethereum?" data-item-thumb="http://cdn.taboola.com/libtrc/static/thumbnails/b92e99f663d9279272685bab6be91b9d.jpg" data-item-syndicated="true" class="videoCube trc_spotlight_item origin-default thumbnail_top syndicatedItem textItem videoCube_5_child trc_excludable " observeid="tbl-observe-5"><a title="Is this cryptoasset the Largest challenger to Bitcoin and Ethereum?" href="https://partners.etoro.com/aw.aspx?A=45729&amp;Task=Click&amp;SubAffiliateID=UK_HF_Desk_Blogpost_Crypto_Cardano_14-11-21_Taboola_AFFID_45729&amp;TargetURL=https://www.etoro.com/news-and-analysis/crypto/cardano-climbs-crypto-leaderboard/&amp;utm_source=taboola&amp;utm_medium=referral&amp;tblci=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCY_Ego8tO0sMntgakX#tblciGiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCY_Ego8tO0sMntgakX" rel="nofollow noopener sponsored" target="_blank" class=" item-thumbnail-href "><div class="thumbBlock_holder"><span class="thumbBlock" style="background-image: url(&quot;https://images.taboola.com/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_234%2Cw_280%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/http%3A//cdn.taboola.com/libtrc/static/thumbnails/b92e99f663d9279272685bab6be91b9d.jpg&quot;);"><span class="thumbnail-overlay"></span><span class="branding">eToro</span><span class="static-text top-right"></span></span><div class="videoCube_aspect"></div></div></a><a title="Is this cryptoasset the Largest challenger to Bitcoin and Ethereum?" href="https://partners.etoro.com/aw.aspx?A=45729&amp;Task=Click&amp;SubAffiliateID=UK_HF_Desk_Blogpost_Crypto_Cardano_14-11-21_Taboola_AFFID_45729&amp;TargetURL=https://www.etoro.com/news-and-analysis/crypto/cardano-climbs-crypto-leaderboard/&amp;utm_source=taboola&amp;utm_medium=referral&amp;tblci=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCY_Ego8tO0sMntgakX#tblciGiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCY_Ego8tO0sMntgakX" rel="nofollow noopener sponsored" target="_blank" class=" item-label-href "><span class="video-label-box trc-main-label "><span class="video-label video-title trc_ellipsis " style="-webkit-line-clamp: 3;">Is this cryptoasset the Largest challenger to Bitcoin and Ethereum?</span><span class="branding">eToro</span></span></a><div class=" trc_user_exclude_btn " title="Remove this item"></div><div class=" trc_exclude_overlay trc_fade "></div><div class=" trc_undo_btn ">Undo</div></div><div data-item-id="~~V1~~5694069837206317696~~EFHVI2YPUBwUwuTmVSff9HMdxhPC-ziU9Pz-qkwbmycndpXq_nTToVci-tV_1bYyPVPbFHdycXfyr1VxmozLcV7JbGFbjtizQN29Zpin8p1JlawpbYFtoRw_FVSAoDPy8yoVX_ZV1DUzrU9mgEqIxVpt34vkyVLCqQj-j_6Ik-WFwt9_72reDSrMsTKuuUo5hyXF24OjjFNPNPUkxZiwjoCyNonfgReyyjlJ-CBpLfJSHk2f01M9rmbvLq2mxmI4By0oOYvhizbq0TBvOhhN9egj4l5JE-5_O-g4nA4azRpJ3Vjc3de0zIhoJSH_1k7BRMiMsWt_J59zH-ihmwYd_g" data-item-title="Why should you use QR Codes for Christmas?" data-item-thumb="http://cdn.taboola.com/libtrc/static/thumbnails/5b0f11231424d1005f44a342e957bf8f.png" data-item-syndicated="true" class="videoCube trc_spotlight_item origin-default thumbnail_top syndicatedItem textItem videoCube_6_child trc_excludable " observeid="tbl-observe-6"><a title="Why should you use QR Codes for Christmas?" href="https://landing.qr-code-generator.com/94ce488c-4204-4e6f-a660-d1f4f7adfd5a?site=disqus-widget-safetylevel20longtail09&amp;site_id=1042962&amp;title=Why+should+you+use+QR+Codes+for+Christmas%3F&amp;platform=Desktop&amp;campaign_id=10654318&amp;campaign_item_id=3048286119&amp;thumbnail=http%3A%2F%2Fcdn.taboola.com%2Flibtrc%2Fstatic%2Fthumbnails%2F5b0f11231424d1005f44a342e957bf8f.png&amp;placement=christmas&amp;click_id=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCh3lEo3Mangrz26YRW&amp;utm_source=taboola&amp;utm_medium=referral&amp;tblci=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCh3lEo3Mangrz26YRW#tblciGiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCh3lEo3Mangrz26YRW" rel="nofollow noopener sponsored" target="_blank" class=" item-thumbnail-href "><div class="thumbBlock_holder"><span class="thumbBlock" style="background-image: url(&quot;https://images.taboola.com/taboola/image/fetch/h_234,w_280,c_fill,g_xy_center,x_734,y_285/http%3A//cdn.taboola.com/libtrc/static/thumbnails/5b0f11231424d1005f44a342e957bf8f.png&quot;);"><span class="thumbnail-overlay"></span><span class="branding">QR Code Generator</span><span class="static-text top-right"></span></span><div class="videoCube_aspect"></div></div></a><a title="Why should you use QR Codes for Christmas?" href="https://landing.qr-code-generator.com/94ce488c-4204-4e6f-a660-d1f4f7adfd5a?site=disqus-widget-safetylevel20longtail09&amp;site_id=1042962&amp;title=Why+should+you+use+QR+Codes+for+Christmas%3F&amp;platform=Desktop&amp;campaign_id=10654318&amp;campaign_item_id=3048286119&amp;thumbnail=http%3A%2F%2Fcdn.taboola.com%2Flibtrc%2Fstatic%2Fthumbnails%2F5b0f11231424d1005f44a342e957bf8f.png&amp;placement=christmas&amp;click_id=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCh3lEo3Mangrz26YRW&amp;utm_source=taboola&amp;utm_medium=referral&amp;tblci=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCh3lEo3Mangrz26YRW#tblciGiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCh3lEo3Mangrz26YRW" rel="nofollow noopener sponsored" target="_blank" class=" item-label-href "><span class="video-label-box trc-main-label "><span class="video-label video-title trc_ellipsis " style="-webkit-line-clamp: 2;">Why should you use QR Codes for Christmas?</span><span class="branding">QR Code Generator</span></span></a><div class=" trc_user_exclude_btn " title="Remove this item"></div><div class=" trc_exclude_overlay trc_fade "></div><div class=" trc_undo_btn ">Undo</div></div><div data-item-id="~~V1~~6271696052187558341~~EnMQguUNssRSjqOk0pplC4JAFVpc0_e8S_OrDzWA1u4ndpXq_nTToVci-tV_1bYyPVPbFHdycXfyr1VxmozLcV7JbGFbjtizQN29Zpin8p1JlawpbYFtoRw_FVSAoDPy8yoVX_ZV1DUzrU9mgEqIxVpt34vkyVLCqQj-j_6Ik-WFwt9_72reDSrMsTKuuUo5f0FjxEpuTFp22TI-zjLA5oCyNonfgReyyjlJ-CBpLfLeto52OzaZxbXDp1Q0LlmJ3LzC3rPZAhWkOGz7RcDUQwZHimeK2XjgdTv7IPoiUpRJ3Vjc3de0zIhoJSH_1k7BRMiMsWt_J59zH-ihmwYd_g" data-item-title="Drink This Before Bed, Watch Your Belly Fat Vanish" data-item-thumb="http://cdn.taboola.com/libtrc/static/thumbnails/23c8408693977ac0fdd00712ccaf772d.jpeg" data-item-syndicated="true" class="videoCube trc_spotlight_item origin-default thumbnail_top syndicatedItem textItem videoCube_7_child trc_excludable " observeid="tbl-observe-7"><a title="Drink This Before Bed, Watch Your Belly Fat Vanish" href="https://shefence-citional.com/6ecdbf00-f9b0-477b-b81d-606d2af973b7?utm_source=tb&amp;utm_campaign=slim_uk_dk&amp;utm_term=disqus-widget-safetylevel20longtail09&amp;utm_content=3021720032&amp;t=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCNv1QogtyU-7yJhp75AQ&amp;dt=tb&amp;tblci=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCNv1QogtyU-7yJhp75AQ#tblciGiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCNv1QogtyU-7yJhp75AQ" rel="nofollow noopener sponsored" target="_blank" class=" item-thumbnail-href "><div class="thumbBlock_holder"><span class="thumbBlock" style="background-image: url(&quot;https://images.taboola.com/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_234%2Cw_280%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/http%3A//cdn.taboola.com/libtrc/static/thumbnails/23c8408693977ac0fdd00712ccaf772d.jpeg&quot;);"><span class="thumbnail-overlay"></span><span class="branding">Support My Weight</span><span class="static-text top-right"></span></span><div class="videoCube_aspect"></div></div></a><a title="Drink This Before Bed, Watch Your Belly Fat Vanish" href="https://shefence-citional.com/6ecdbf00-f9b0-477b-b81d-606d2af973b7?utm_source=tb&amp;utm_campaign=slim_uk_dk&amp;utm_term=disqus-widget-safetylevel20longtail09&amp;utm_content=3021720032&amp;t=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCNv1QogtyU-7yJhp75AQ&amp;dt=tb&amp;tblci=GiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCNv1QogtyU-7yJhp75AQ#tblciGiBInsqaWF-HnEQvwQCYt9EYT_jqUdSDgEe9wr6XRBRdXiCNv1QogtyU-7yJhp75AQ" rel="nofollow noopener sponsored" target="_blank" class=" item-label-href "><span class="video-label-box trc-main-label "><span class="video-label video-title">Drink This Before Bed, Watch Your Belly Fat Vanish</span><span class="branding">Support My Weight</span></span></a><div class=" trc_user_exclude_btn " title="Remove this item"></div><div class=" trc_exclude_overlay trc_fade "></div><div class=" trc_undo_btn ">Undo</div></div></div></div></div><div class="trc_clearer"></div></div></div></div></div>
+        <script>
+            
+function has(obj, key) {
+    // The object.hasOwnProperty method fails when the
+    // property under consideration is named 'hasOwnProperty'.
+    return Object.prototype.hasOwnProperty.call(obj, key);
+}
+
+
+
+/*
+ * Iterates over an object or a collection and calls a callback
+ * function with each item as a parameter.
+ */
+function each(collection, callback) {
+    var length = collection.length;
+    var forEach = Array.prototype.forEach;
+
+    if (isNaN(length)) {
+        // Treat collection as an object
+        for (var key in collection) {
+            if (has(collection, key))
+                callback(collection[key], key, collection);
+        }
+    } else if (forEach) {
+        // Treat collection as an array
+        forEach.call(collection, callback);
+    } else {
+        for (var i = 0; i < length; i++)
+            callback(collection[i], i, collection);
+    }
+}
+
+/**
+ * Create an object from the key-value pairs in a query string.
+ * Duplicate keys are not supported (only last value will be used).
+ *
+ * @param {string} [queryString] - The search portion of a url. Must start with a ?.
+ *                                 Defaults to window.location.search.
+ * @returns {Object<string>} - The mapping of query string keys to values.
+ */
+function parseQueryString(queryString) {
+    if (typeof queryString === 'undefined')
+        queryString = window.location.search;
+
+    var params = {};
+
+    each(queryString.substr(1).split('&'), function (item) {
+        var pair = item.split('=').map(function (part) {
+            return decodeURIComponent(part.replace(/\+/g, '%20'));
+        });
+        if (pair[0])
+            params[pair[0]] = pair[1];
+    });
+
+    return params;
+}
+
+
+/**
+* Wrap a function such that it can only be run once. The return value is cached and returned in subsequent calls.
+* @param {function} fn - Function to wrap.
+* @returns {any} - Return value as returned by the first invocation of fn, regardless of arguments.
+*/
+function once(fn) {
+    var returnValue;
+    return function () {
+        if (fn) {
+            returnValue = fn.apply(this, arguments);
+            fn = null;
+        }
+        return returnValue;
+    };
+}
+
+if (window.getComputedStyle) {
+    getCurrentStyle = function(elem, prop, _camel) {
+        try {
+            // We need this to both protect for the case where `elem` is not valid,
+            // such as it being `document` and for the broken ShadowDOMPolyfill script.
+            // See https://git.io/vrPIf for more details.
+            return window.document.defaultView.getComputedStyle(elem, null).getPropertyValue(prop);
+        } catch (err) {
+            return null;
+        }
+    };
+} else {
+    // IE < 9, Opera
+    getCurrentStyle = function(elem, prop, camel) {
+        return elem.currentStyle[prop] || elem.currentStyle[camel];
+    }
+}
+
+/**
+* Get the height of the document.
+*
+* @returns {number} - The document height
+*/
+function getDocumentHeight() {
+    const container = document.body;
+    var height = container.offsetHeight
+
+    var marginTop = parseInt(getCurrentStyle(container, 'margin-top', 'marginTop'), 10);
+    if (marginTop)
+        height += marginTop;
+
+    var marginBottom = parseInt(getCurrentStyle(container, 'margin-bottom', 'marginBottom'), 10);
+    if (marginBottom)
+        height += marginBottom;
+
+    return height;
+}
+
+/**
+* Starts a loop to notice changes to the page height.
+*
+* @param {function} cb - Function to call with new height values.
+* @returns {void}
+*/
+function onHeightChange(cb) {
+    let count = 0;
+    let lastHeight = 0;
+
+    const loop = () => {
+        const currentHeight = getDocumentHeight();
+        if (currentHeight !== lastHeight) {
+            lastHeight = currentHeight;
+            cb(currentHeight);
+        }
+
+        // We'll watch for height changes for a total of ~25.4 seconds,
+        // with these intervals:
+        // 100ms, 100ms, 200ms, 200ms, 400ms, 400ms, ..., 6400ms
+        // The idea behind these intervals is the following:
+        // - on fast websites, with small number of widgets, ad provider
+        // will be loaded fast and has good chances to be visible right away,
+        // so we need to detect resize quickly
+        // - on slow websites it doesn't make sense to check for resize every
+        // 100ms because well, they're slow and it might take more than 5sec
+        // for ad provider to render. Also most likely page will be long and it
+        // will take some time for user to scroll down
+        /* eslint-disable no-magic-numbers */
+        count += 1;
+        if (count < 15)
+            setTimeout(loop, 100 * Math.pow(2, Math.floor(count / 2)));
+        /* eslint-enable no-magic-numbers */
+    };
+
+    loop();
+}
+
+/**
+* Send a message to the host page. Mimics the format
+* used by core/utils/frameBus.
+*
+* @param {string} name - The event name.
+* @param {*} data - JSON-serializable data to send.
+* @returns {void}
+*/
+function sendMessageToHost(name, data) {
+    data = data || {};
+    window.parent.postMessage(JSON.stringify({
+        data,
+        name,
+        scope: 'host',
+        sender:  window.name ,
+    }), '*');
+}
+
+
+const POST_MESSAGE_TYPES = Object.freeze({
+    click: 'click',
+    errorProviderNotReady: 'error-provider-not-ready',
+    errorNoHeight: 'error-no-height',
+    ready: 'ready',
+    resize: 'resize',
+    redirect: 'redirect',
+});
+
+// The minimum height which indicates an ad has loaded.
+// Height of Sponsored text and margin is 32 pixels.
+const minHeight = 35;
+
+/**
+* Generates events for resizing the frame and ad loads.
+*
+* @param {Object} options - Options
+*   {function} readyData - The data to include with the ready event.
+* @returns {function} - A callback which should be called when the provider indicates the ad is ready.
+*/
+function startAdsLoop(readyData) {
+    const startTime = new Date().getTime();
+
+    let providerReadied = false;
+    let minHeightReached = false;
+    // This parameter isn't expected in the ready event so we delete it after capturing it's value.
+    const sendReady = readyData.sendReady;
+    delete readyData.sendReady;
+
+    const sendReadyOnce = once(() => {
+        const extraData = window._OnReadyExtraData;
+        if (extraData) {
+            extraData.time_to_load = new Date().getTime() - startTime;
+            readyData.extraData = JSON.stringify(extraData);
+        }
+
+        sendMessageToHost(POST_MESSAGE_TYPES.ready, readyData);
+    });
+    const detectReadyMismatch = once(() => {
+        setTimeout(() => {
+            if (!providerReadied)
+                sendMessageToHost(POST_MESSAGE_TYPES.errorProviderNotReady, { provider: readyData.provider });
+
+            const heightReached = minHeightReached || getDocumentHeight() >= minHeight;
+            if (!heightReached)
+                sendMessageToHost(POST_MESSAGE_TYPES.errorNoHeight, { provider: readyData.provider });
+        }, 100); // eslint-disable-line no-magic-numbers
+    });
+
+    onHeightChange(height => {
+        if (height < minHeight)
+            return;
+
+        minHeightReached = true;
+        if (sendReady) {
+            sendReadyOnce();
+        }
+        detectReadyMismatch();
+        sendMessageToHost(POST_MESSAGE_TYPES.resize, { height });
+    });
+
+    return once(() => {
+        providerReadied = true;
+        detectReadyMismatch();
+    });
+}
+
+function uuidv4() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+    });
+}
+
+            var doc = window.document;
+var head = doc.head || doc.getElementsByTagName('head')[0] || doc.body;
+
+/**
+ * Add a style element with the given css.
+ *
+ * Borrowed from http://stackoverflow.com/a/524721
+ *
+ * @param {string} css - The css to add
+ * @returns {HTMLStyleElement} - The style element which was added
+ */
+function addStyleSheet(css) {
+    var style = doc.createElement('style');
+
+    // type must be set to use `styleSheet.cssText` in legacy IE
+    // TODO: Re-examine this once IE8 and IE9 are no longer supported
+    style.type = 'text/css';
+
+    if (style.styleSheet)
+        style.styleSheet.cssText = css;
+    else
+        style.appendChild(doc.createTextNode(css));
+
+    head.appendChild(style);
+
+    return style;
+}
+
+/**
+ * Serializes object containing name:value pairs into a query string.
+ *
+ * @param {Object} params - The parameters to serialize.
+ * @returns {string} - The query string.
+ */
+function serializeArgs(params) {
+    var pcs = [];
+    each(params, function (val, key) {
+        if (val !== undefined)
+            pcs.push(encodeURIComponent(key) + (val === null ? '' : '=' + encodeURIComponent(val)));
+    });
+    return pcs.join('&');
+}
+
+/**
+ * Adds name:value pairs from object to the url's query string.
+ *
+ * @param {string} url - The base url. May already contain a query string.
+ * @param {Object} [params] - The parameters to add.
+ * @param {boolean} [nocache] - If true, a time-based parameter will be added to bust the cache.
+ * @returns {string} - The url with parameters added.
+ */
+function serialize(url, params, nocache) {
+    if (params) {
+        if (url.indexOf('?') === -1)
+            url += '?';
+        else if (url.charAt(url.length - 1) !== '&')
+            url += '&';
+
+        url += serializeArgs(params);
+    }
+
+    if (nocache) {
+        var ncp = {};
+        ncp[(new Date()).getTime()] = null;
+        return serialize(url, ncp);
+    }
+
+    var len = url.length;
+    return url.charAt(len - 1) === '&' ? url.slice(0, len - 1) : url;
+}
+
+
+function isString(str) {
+    return Object.prototype.toString.call(str) === '[object String]';
+}
+
+// Borrowed from underscore
+function extend(obj) {
+    each(Array.prototype.slice.call(arguments, 1), function (source) {
+        for (var prop in source) {
+            if (has(source, prop))
+                obj[prop] = source[prop];
+        }
+    });
+    return obj;
+}
+
+// WARNING: collapsing white space on an input is an XSS hazard.
+//
+// If you try to pass this function's return value or use this function
+// outside of this module, you MUST make it safer.
+//
+// For more info, see discussion at:
+// http://phabricator.local.disqus.net/D22393#inline-161397
+function normalizeCssPropertyName(propName) {
+    return propName.replace(/\s+/g, '').toLowerCase();
+}
+
+// WARNING:
+// DOM-modifying function
+// Does NOT escape inputs
+// XSS hazard
+//
+// This function does not escape inputs; therefore if you pass outside
+// inputs into this function, you open up the code to an XSS attack
+// via CSS.
+//
+// Do NOT pass unknown values into this function!
+function setInlineStyle(elem, prop, value) {
+    var _styles = {};
+    if (isString(prop))
+        _styles[prop] = value;
+    else
+        _styles = prop;
+
+    // Avoid modifying the original object passed into this function
+    var styles = extend({}, _styles);
+
+    // - normalize all keys
+    //
+    // - convert any null values to empty strings
+    //   because CSS DOM API in some browsers (probably just IE9)
+    //   does not understand null, only empty strings
+    //
+    // - ignore keys with undefined values
+    each(styles, function (val, key) {
+        var normalizedKey = normalizeCssPropertyName(key);
+        if (normalizedKey !== key) {
+            delete styles[key];
+            styles[normalizedKey] = val;
+        }
+
+        if (val === null)
+            styles[normalizedKey] = '';
+
+        if (val === void 0)
+            delete styles[normalizedKey];
+    });
+
+    var style = elem.style;
+
+    each(styles, function (val, key) {
+        // Casting `value` to a string explicitly here since IE9 throws
+        // an exception if you pass something else, like a Number
+        style.setProperty(key, String(val), 'important');
+    });
+}
+
+// WARNING: collapsing white space on an input is an XSS hazard.
+//
+// If you try to pass this function's return value or use this function
+// outside of this module, you MUST make it safer.
+//
+// For more info, see discussion at:
+// http://phabricator.local.disqus.net/D22393#inline-161397
+function normalize(color) {
+    // - remove white space
+    // - make lowercase
+    return color.replace(/\s+/g, '').toLowerCase();
+}
+
+function parseHexColor(color) {
+    // if color is exactly 3 hexdigits, expand to 6
+    color = color.replace(/^#([a-f0-9])([a-f0-9])([a-f0-9])$/, '#$1$1$2$2$3$3');
+
+    // remove '#'
+    color = color.slice(1);
+
+    return {
+        red: parseInt(color.slice(0, 2), 16),
+        green: parseInt(color.slice(2, 4), 16),
+        blue: parseInt(color.slice(4, 6), 16),
+    };
+}
+
+function parseRgbColor(color) {
+    var match = color.match(/^rgb\((\d+),(\d+),(\d+)\)$/);
+
+    return {
+        red: parseInt(match[1], 10),
+        green: parseInt(match[2], 10),
+        blue: parseInt(match[3], 10),
+    };
+}
+
+function parseRgbaColor(color) {
+    var match = color.match(/^rgba\((\d+),(\d+),(\d+),([\d.]+)\)$/);
+
+    return {
+        red: parseInt(match[1], 10),
+        green: parseInt(match[2], 10),
+        blue: parseInt(match[3], 10),
+        alpha: parseFloat(match[4]),
+    };
+}
+
+function getColor(container, elem, color, getColorFunc) {
+    elem = window.document.createElement(elem);
+
+    setInlineStyle(elem, {
+        visibility: 'hidden',
+        color: color,
+    });
+
+    container.appendChild(elem);
+    color = getColorFunc(elem);
+    container.removeChild(elem);
+
+    return color;
+}
+
+function parseNamedColor(color, options) {
+    options = options || {};
+    var container = options.container || window.document.body;
+
+    // We assume `elem.createTextRange` to be available
+    // when we don't have `window.getComputedStyle`.
+    // This is the case for IE8, which is the only relevant
+    // browser that doesn't support getComputedStyle.
+    // see http://caniuse.com/#feat=getcomputedstyle
+    if (!window.getComputedStyle) {
+        color = getColor(container, 'textarea', color, function (elem) {
+            // queryCommandValue('ForeColor') returns a 24-bit number
+            // in BGR format: [bits 16-23 blue][8-15 green][0-7 red]
+            // technique from: http://stackoverflow.com/a/3892864
+            return elem.createTextRange().queryCommandValue('ForeColor');
+        });
+        return {
+            red: color & 0x0000FF, // last 8 bits are red
+            blue: color >>> 16, // first 8 bits are blue
+            green: (color & 0x00FF00) >>> 8, // middle 8 bits are green
+        };
+    }
+
+    color = getColor(container, 'span', color, function (elem) {
+        return window.getComputedStyle(elem, null).getPropertyValue('color');
+    });
+
+    return parseRgbColor(normalize(color));
+}
+
+// WARNING: this function ASSUMES that its input is a valid CSS color value.
+// It DOES NOT attempt to identify and reject invalid inputs.
+//
+// Example bad input:
+//      'rgba(255, 0, 0, 3.2.1)'
+//
+// If you pass in the above bad input, the resulting behavior of this function
+// is unspecified by unit tests.
+function parseColor(color, options) {
+    color = normalize(color);
+    var parseFunc;
+
+    if (color === 'transparent')
+        return { red: 0, green: 0, blue: 0, alpha: 0 };
+
+    // if color starts with '#'
+    if (color.charAt(0) === '#')
+        parseFunc = parseHexColor;
+
+    // if color starts with 'rgba'
+    else if (color.slice(0, 5) === 'rgba(')
+        parseFunc = parseRgbaColor;
+
+    // if color starts with 'rgb'
+    else if (color.slice(0, 4) === 'rgb(')
+        parseFunc = parseRgbColor;
+
+    // if color is only alpha chars
+    else if (/^[a-z]+$/.test(color))
+        parseFunc = parseNamedColor;
+
+    else
+        throw new Error('parseColor received unparseable color: ' + color);
+
+    return parseFunc(color, options);
+}
+
+
+var ERROR_REASON = 'Color components should be numbers.';
+
+function toRGBColorString(components) {
+    var red = Number(components.red);
+    var green = Number(components.green);
+    var blue = Number(components.blue);
+
+    // Since this function produces a string ready to inject into CSS,
+    // do the following checks to guard against XSS
+    if (isNaN(red) || isNaN(green) || isNaN(blue))
+        throw new Error(ERROR_REASON);
+
+    var prefix = 'rgb';
+    var colors = [red, green, blue];
+
+    // alpha component is optional
+    var alpha = components.alpha;
+    if (alpha) {
+        alpha = Number(alpha);
+        if (isNaN(alpha))
+            throw new Error(ERROR_REASON);
+        prefix += 'a';
+        colors.push(alpha);
+    }
+
+    return prefix + '(' + colors + ')';
+}
+
+const DEFAULT_WIDGET_ID = 'disqus-widget-safetylevel20longtail09';
+
+/**
+ * Taboola class for initializing and loading Taboola content. Extends BaseProvider class.
+ */
+class Taboola {
+    /**
+     * Constructs a new Taboola class calling BaseProvider constructor and registering script URL, handlers, and styles.
+     * @param {Object} props - Data specific to Taboola.
+     * @param {string} props.taboola_publisher_name - The named Taboola publisher name
+     * @param {string} props.script_path - The override Taboola publisher name
+     * @param {string} props.fallback_script_path - The Taboola publisher name to fallback to.
+     * @param {string} props.colorScheme - The color scheme of the host page.
+     * @param {string} props.anchorColor - The link color of the host page in hexadecimal format.
+     * @param {string} props.mode - The Taboola ad mode.
+     * @param {string} props.source_url - The absolute URL of the host page.
+     * @param {string} props.referrer_url - The absolute URL of the referring page.
+     * @param {string} props.placement - The Taboola placement of the ad.
+     * @param {Object} callbacks - Taboola lifecycle callback handlers.
+     * @param {function} callbacks.onScriptLoad - onScriptLoad callback handler when Taboola tag loads.
+     * @param {function} callbacks.onAdLoad - onAdLoad callback handler when Taboola renders an ad.
+     * @param {function} callbacks.onAdError - onAdError callback handler when Taboola returns no content.
+     * @param {function} callbacks.onClick - onClick callback handler when user clicks on a Taboola ad.
+     */
+    constructor(props, callbacks) {
+        this.props = props;
+        this.callbacks = callbacks;
+        this._taboola = window._taboola = window._taboola || [];
+        this.taboolaPublisherId = props.script_path || props.taboola_publisher_name;
+
+        this.setStyles();
+        this.setPageType();
+        this.addWidget();
+        this.registerListeners();
+
+        // Ensure all event handlers are bound to the class since their
+        // context may change depending on where they're bound.
+        this.onScriptLoad = this.onScriptLoad.bind(this);
+        this.onAdLoad = this.onAdLoad.bind(this);
+        this.onAdError = this.onAdError.bind(this);
+        this.onClick = this.onClick.bind(this);
+    }
+
+    /**
+     * Sets document styles necessary for Taboola.
+     *
+     * @param {Element} element - The parent element of the ad container.
+     */
+    setStyles(element = window.document.body) {
+        if (this.props.anchorColor) {
+            // WARNING: Must parse then stringify to prevent XSS
+            const color = toRGBColorString(parseColor(this.props.anchorColor));
+            addStyleSheet(`a, .video-title { color: ${color} !important; }`);
+        }
+    }
+
+    /**
+     * Adds the page type to the Taboola queue.
+     */
+    setPageType() {
+        this._taboola.push({
+            article: 'auto',
+            url: this.props.source_url,
+            referrer: this.props.referrer_url,
+        });
+    }
+
+    /**
+     * Adds the widget arguments to the Taboola queue.
+     */
+    addWidget() {
+        this._taboola.push({
+            mode: this.props.mode,
+            container: 'taboola',
+            target_type: 'mix',
+            placement: this.props.placement,
+        });
+    }
+
+    /**
+     * Registers callback event handlers for ad lifecycle events from Taboola.
+     */
+    registerListeners() {
+        this._taboola.push({
+            listenTo: 'render',
+            handler: () => {
+                this.onAdLoad();
+            },
+        });
+
+        this._taboola.push({
+            listenTo: 'nocontent',
+            handler: () => {
+                const scriptPath = this.taboolaPublisherId;
+                const fallbackScriptPath = this.props.fallback_script_path || DEFAULT_WIDGET_ID;
+                /** We've found that Taboola has a large number of "placements" misconfigured on their side.
+                 *  Rather than going through them manually, we're trying to create a fallback approach
+                 *  (and they can look at the data on their side to repair). */
+                if (scriptPath !== fallbackScriptPath && !this.props.script_path)
+                    window.location.replace(`${window.location.href}&script_path=${fallbackScriptPath}`);
+                else
+                    this.onAdError(POST_MESSAGE_TYPES.errorProviderNotReady);
+            },
+        });
+
+        this._taboola.push({
+            listenTo: 'click',
+            handler: () => {
+                this.onClick();
+            },
+        });
+    }
+
+    /**
+     * Loads the Taboola script tag and pushes the "flush" command telling Taboola to load ads.
+     */
+    load() {
+        var script = doc.createElement('script');
+        script.src = serialize(
+            `https://cdn.taboola.com/libtrc/${this.taboolaPublisherId}/loader.js`,
+            undefined,
+            undefined,
+        );
+        script.id = 'tb_loader_script';
+        script.async = true;
+        script.charset = 'UTF-8';
+        script.onload = this.onScriptLoad;
+        head.appendChild(script);
+
+        // Sending the flush command tells Taboola there are no
+        // additional widgets and should make the request now.
+        this._taboola.push({
+            flush: true,
+        });
+    }
+
+    /**
+     * Event handler for when the script tag finishes loading.
+     */
+    onScriptLoad() {
+        this.fireCallback('onScriptLoad');
+    }
+
+    /**
+     * Event handler for when the ad loads a creative.
+     */
+    onAdLoad() {
+        this.fireCallback('onAdLoad');
+    }
+
+    /**
+     * Event handler for when the ad returns an error.
+     * @param {string} reason - The reason ID for the error.
+     */
+    onAdError(reason) {
+        this.fireCallback('onAdError', reason);
+    }
+
+    /**
+     * Event handler for when the user clicks on an ad.
+     */
+    onClick() {
+        this.fireCallback('onClick');
+    }
+
+    /**
+     * Looks up registered callbacks and calls their handler if found.
+     * @param {string} name - The name of the callback.
+     * @param {...any} args - The arguments supplied
+     */
+    fireCallback(name, ...args) {
+        if (this.callbacks[name])
+            this.callbacks[name].apply(this, args);
+    }
+}
+
+
+const iframeTemplateData = {"placement":"{\"domain\": \"https://www.studiopieters.nl\", \"experiment\": \"network_default\", \"position\": \"top\", \"shortname\": \"studiopieters\", \"variant\": \"fallthrough\"}","is_taboola_named":false,"language":"en","colorscheme":"light","typeface":"sans-serif","variant":"fallthrough","forum_id":3755358,"source_url":"https://www.studiopieters.nl/esp32-pinout/","organization_id":2719016,"taboola_publisher_name":"disqus-widget-safetylevel20longtail09","experiment":"network_default","mode":"thumbnails-a","position":"top","shortname":"studiopieters","referrer_url":"https://www.studiopieters.nl/","canonical_url":"https://www.studiopieters.nl/esp32-pinout/"};
+const queryParams = parseQueryString(window.location.search);
+
+const taboola = new Taboola({ ...iframeTemplateData, ...queryParams }, {
+    onAdLoad: startAdsLoop({
+        advertisement_id: 184193,
+        forumId: iframeTemplateData.forum_id,
+        provider: 'taboola',
+        sendReady: true,
+    }),
+    onAdError: errorReason => sendMessageToHost(errorReason, {provider: 'taboola'}),
+    onClick: () => sendMessageToHost(POST_MESSAGE_TYPES.click, {provider: 'taboola'}),
+});
+
+taboola.load();
+
+        </script>
+    </div>
+
+    </div>
+
+
+
+<iframe src="a_data/syncframe.html" id="criteo-syncframe-rtus" style="border-width:0px; margin:0px; display:none" width="0" height="0" frameborder="0"></iframe><div id="tbl-aug-z2xchv" class="trc_popover_aug_container"><div id="tbl-aug-qua58j" class="trc_popover_aug_container"><div id="tbl-aug-7umuf6" class="trc_popover_aug_container"><div class=" trc_popover trc_popover_fade trc_bottom "><div class=" trc_popover_arrow "></div><div class="popupContentWrapper">
+                    <div class=" trc_popover_title_wrapper ">
+                        <div class=" trc_popover_title " id="trc_userx_popover_title">
+                            <span class=" trc_popover_title_text "></span>
+                        </div>
+                    </div>
+                    <div class=" trc_popover_content_wrapper ">
+                        <div id="trc_userx_popover_content" class=" trc_popover_content "></div>
+                    </div>
+                </div></div></div></div></div></body></html>
