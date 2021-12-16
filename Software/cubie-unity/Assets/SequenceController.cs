@@ -31,7 +31,7 @@ public class SequenceController : MonoBehaviour
         NEW_LABEL = 3,
         REPEAT = 4,
         GRIPPER_OPEN = 5,
-        GRIPPER_CLOSE = 6,   
+        GRIPPER_CLOSE = 6 
     }
 
     enum OPTION_INPUTS
@@ -39,16 +39,70 @@ public class SequenceController : MonoBehaviour
         DROPDOWN,
         INPUT
     }
+
+    enum SEQUENCER_MODE //MUST MATCH THE ORDER IN THE EDITOR OPTIONS LIST
+    {
+        ADD = 0, //index must be same in the editor options for mode list
+        EDIT = 1,
+        DELETE = 2
+    }
  
 
 
     public TMP_Dropdown ActionList;
     public TMP_Dropdown OptionList;
-
     public TMP_InputField OptionInput;
+    public TMP_Dropdown LineList;
+    public TMP_Dropdown ModeList;
+
+    
 
     List<string> LabelList = new List<string>();
     
+    
+
+    void AddLineNumberList(int number)
+    {
+         LineList.options.Add (new TMP_Dropdown.OptionData() {text=""+number});
+    }
+
+
+    public void onModeChange()
+    {
+        SEQUENCER_MODE mode = (SEQUENCER_MODE)ModeList.value;
+
+        switch(mode)
+        {
+            case SEQUENCER_MODE.ADD:
+            {
+                ActionList.gameObject.SetActive(true);
+                onChangeActionList(); //set the options
+                LineList.gameObject.SetActive(false);
+            }break;
+            case SEQUENCER_MODE.DELETE:
+            {
+                ActionList.gameObject.SetActive(false);
+                 
+                LineList.gameObject.SetActive(true);
+                LineList.gameObject.transform.Find("Label").GetComponent<TextMeshProUGUI>().text = "Line Number";
+                LineList.RefreshShownValue ();
+                SetOptionVisible(OPTION_INPUTS.DROPDOWN,false);
+                SetOptionVisible(OPTION_INPUTS.INPUT, false);
+            }break;
+            case SEQUENCER_MODE.EDIT:
+            {
+                ActionList.gameObject.SetActive(true);
+                onChangeActionList(); //set the options
+                LineList.gameObject.SetActive(true);
+                LineList.gameObject.transform.Find("Label").GetComponent<TextMeshProUGUI>().text = "Line Number";
+                LineList.RefreshShownValue ();
+                
+            }break;
+        }
+
+
+    }
+
     public void onChangeActionList()
     {
         int selectedIndex = ActionList.value;
@@ -142,6 +196,7 @@ public class SequenceController : MonoBehaviour
        }
     }
 
+    
 
     
 
@@ -236,6 +291,7 @@ public class SequenceController : MonoBehaviour
 
     public void SetRow(string action,string p1="",string p2="",string p3="",string p4="",string p5="",string p6="")
     {
+        AddLineNumberList(currentLineNumber);
         table.GetCell(currentRow,LINE_NUMBER).text =""+currentLineNumber;
         table.GetCell(currentRow,ACTION).text =action;
         table.GetCell(currentRow,P1).text =p1;
@@ -247,12 +303,17 @@ public class SequenceController : MonoBehaviour
         currentRow++;
         table.Rows++;
         currentLineNumber++;
+        
     
     }
     public void InitTable()
     {
         SetRow("WAIT","1");
+         
         onChangeActionList(); //populate the action list
+        //ActionList.gameObject.SetActive(true);
+        //onChangeActionList(); //set the options
+        LineList.gameObject.SetActive(false);
 
     }
 

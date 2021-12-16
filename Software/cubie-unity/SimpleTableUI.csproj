@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{917d6b7e-6fa9-94c0-4c2e-f42fa6146057}</ProjectGuid>
+    <ProjectGuid>{8eb285e5-e86e-badc-fd8a-da0bdaf402f3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>SimpleTableUI</AssemblyName>
@@ -36,11 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/SimpleTableUI/Scripts/TextProperties/TextProperties.cs" />
-     <Compile Include="Assets/SimpleTableUI/Scripts/UILineRenderer.cs" />
      <Compile Include="Assets/SimpleTableUI/Scripts/TableUI.cs" />
-     <Compile Include="Assets/SimpleTableUI/Scripts/Utils.cs" />
+     <Compile Include="Assets/SimpleTableUI/Scripts/UILineRenderer.cs" />
      <Compile Include="Assets/SimpleTableUI/Scripts/TableUI_Menu.cs" />
+     <Compile Include="Assets/SimpleTableUI/Scripts/Utils.cs" />
+     <Compile Include="Assets/SimpleTableUI/Scripts/TextProperties/TextProperties.cs" />
      <None Include="Assets/SimpleTableUI/Scripts/SimpleTableUI.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>/home/kp/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -271,19 +271,19 @@
         <HintPath>/home/kp/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>/home/kp/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -631,16 +631,16 @@
         <HintPath>/home/kp/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{815dd4bd-9d99-718c-702b-8b993ed04b0a}</ProjectGuid>
+    <ProjectGuid>{7e3e4b25-0e3d-d825-0de9-8aec711b8870}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -50,10 +50,10 @@
      <Compile Include="Assets/Scripts/ArticulationJointController.cs" />
      <Compile Include="Assets/Scripts/RobotController.cs" />
      <Compile Include="Assets/Ardity/Scripts/Threads/SerialThread.cs" />
+     <Compile Include="Assets/SequenceController.cs" />
      <Compile Include="Assets/Ardity/Scripts/SerialControllerCustomDelimiter.cs" />
      <Compile Include="Assets/Scripts/RobotManualInput.cs" />
      <Compile Include="Assets/SimpleTableUI/Example/TableUIExample.cs" />
-     <Compile Include="Assets/SequenceController.cs" />
      <None Include="Assets/Resources/test.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
@@ -297,7 +297,7 @@
         <HintPath>/home/kp/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>/home/kp/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -645,52 +645,52 @@
         <HintPath>/home/kp/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Sysroot.Linux_x86_64">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Toolchain.Linux-x86_64">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/Unity.Toolchain.Linux-x86_64.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/Unity.Toolchain.Linux-x86_64.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.SysrootPackage.Editor">
-        <HintPath>/home/kp/Documents/Do_Backup/VirtualBoxW10Shared/CubieSix/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
+        <HintPath>/home/kp/Documents/Do_Backup/Projects/robotzio/cubie-six/Software/cubie-unity/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SimpleTableUI.csproj">
-      <Project>{917d6b7e-6fa9-94c0-4c2e-f42fa6146057}</Project>
+      <Project>{8eb285e5-e86e-badc-fd8a-da0bdaf402f3}</Project>
       <Name>SimpleTableUI</Name>
     </ProjectReference>
     <ProjectReference Include="SimpleTableUI_Editor.csproj">
-      <Project>{f7f618b8-24b1-ccd3-e7d6-67d59a904099}</Project>
+      <Project>{0598e0b6-aba8-ee60-7b1b-9a204ba679c7}</Project>
       <Name>SimpleTableUI_Editor</Name>
     </ProjectReference>
   </ItemGroup>
